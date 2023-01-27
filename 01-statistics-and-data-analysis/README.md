@@ -150,25 +150,25 @@ visual representation of data is a powerful tool for understanding data, some ex
 
 - location measure in data set provide the analyst some quantitative measure of where the **data center** is in a sample mean.
 
-- one obvious measure is the sample mean (mathematical average), which is simply a numerical average.
-
-- the sample median is to reflect the central tendency of the sample and is uninfluenced by extreme values.
+1.  **sample mean**
 
 - suppose that the observations in a smple are $x_{1}, x_{2}, x_{3}, \cdots, x_{n}$, the sample mean denoted $\bar{x}$
 
-**sample mean**
-
 $$ \bar{x} = \frac{\sum_{i=1}^{n} x_{i}}{n} = \frac{x_{1} + x_{2} + \cdots + x_{n}}{n} $$
 
-sensitive to outliers (or extreme values)
+- sensitive to outliers (or extreme values)
+- one obvious measure is the sample mean (mathematical average), which is simply a numerical average.
+- the sample median is to reflect the central tendency of the sample and is uninfluenced by extreme values.
 
-- sample median-middle value in the observations of ordered data set.  It divides a data set into two equal parts, denoted by $\tilde{x}$
+2.  **sample median** 
 
-**if $n$ is even**
+- middle value in the observations of ordered data set.  It divides a data set into two equal parts, denoted by $\tilde{x}$
+
+- **if $n$ is even**
 
 $$ \tilde{x} = \frac{x_{\frac{n+1}{2}} + x_{\frac{n+2}{2}}}{2} $$
 
-**if $n$ is odd**
+- **if $n$ is odd**
 
 $$ \tilde{x} = x_{\frac{n+1}{2}} $$
 
@@ -176,17 +176,60 @@ $$ \tilde{x} = x_{\frac{n+1}{2}} $$
 
 - a sample of n = 12 recording Beethovens Symphony #9, yielding the following durations (min) listed in increasing order is as follows
 
-- 62.3 62.8 63.6 65.2 65.7 66.4 67.4 68.4 68.8 70.8 75.7 79.0
+    62.3 62.8 63.6 65.2 65.7 66.4 67.4 68.4 68.8 70.8 75.7 79.0
 
-- the sample mean is 68.01
+    - the sample mean is 68.01
 
-- the sample median is the average of the $n/2 = 6\text{th}$ and $n/2 + 1 = 7\text{th}$ observations
+    - the sample median is the average of the $n/2 = 6\text{th}$ and $n/2 + 1 = 7\text{th}$ observations
+    - note:  if the largest observation 79.0 was excluded from the sample, the resulting sample median for the n = 11 remaining observations would have been the single middle value 66.4 (the [n +1] = 2 6th ordered value, i.e. the 6th value in from either end of the ordered list
+    - the sample mean is $\bar{x} = 68.01$ and the sample median is $\tilde{x} = 67.4$
+
+3.  **quartiles** divide the data set (sample or population) into four equal parts
+    - observations above the third quartile are Q3 constituting the upper quarter of the data set
+    - the second quartile Q2 is the median
+    - the first quartile Q1 separates the lower quarter from the upper three-quarters
+
+**example**  beethovens symphony #9
+
+- data: $Q_{1} = 64.80$, $Q_{2} = 66.90$, $Q_{3} = 69.30$
+- a data set (sample or population) can be even more finely divided using **percentiles**; the 99th percentile separates the highest 1% from the bottom 99%, and so on.
+- the mean is quite sensitive to a single outlier, whereas the median is not.  the median is a more robust measure of central tendency than the mean.
+
+4.  **trimmed mean**
+
+- a trimmed mean is comprised betweeen $\bar{x}$ and $\tilde{x}$, and is a more robust measure of central tendency than the mean.  
+
+**example**
+
+- the 10% trimmed mean is found by eliminating the largest 10% and smallest 10% and computing the average of the remaining values
+- so, for the with nitrogran group the 10% trimmed mean is 
+
+**observations of nitrogen influences**
+
+| no-nitrogen | nitrogen |
+|:------------|:---------|
+| 0.32 | 0.26 | 
+| 0.53 | 0.43 |  
+| 0.28 | 0.47 | 
+| 0.37 | 0.49 | 
+| 0.47 | 0.52 | 
+| 0.43 | 0.75 | 
+| 0.36 | 0.79 | 
+| 0.42 | 0.86 | 
+| 0.38 | 0.62 |
+| 0.43 | 0.46 |
+
+$$ \bar{x_{tr(10)}} = \frac{0.43 + 0.47 + 0.49 + 0.52 + 0.75 + 0.79 + 0.62 + 0.46}{8} = 0.56 $$
 
 ## measures of variability
 
-- population parameters include the mean, standard deviation, and variance of the population.  
-- mean is denoted by $\mu$
-- standard deviation is denoted by $\sigma$
+- location measures no not provide a proper summary of the **nature of the data set**.
+- we can not make meaningful conclusions without considering sample variability
+- some measures of variability 
+    - range (max - min)
+    - interquartile range (Q3 - Q2)
+    - variance or standard deviation
+- different samples or populations may have identical measures of center yet differ from one another in important ways.
 
 ## discrete and continuous data
 
