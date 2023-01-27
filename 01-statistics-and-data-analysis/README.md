@@ -231,6 +231,9 @@ $$ \bar{x_{tr(10)}} = \frac{0.43 + 0.47 + 0.49 + 0.52 + 0.75 + 0.79 + 0.62 + 0.4
     - variance or standard deviation
 - different samples or populations may have identical measures of center yet differ from one another in important ways.
 
+<img width="521" alt="Screenshot 2023-01-27 at 1 17 39 PM" src="https://user-images.githubusercontent.com/65584733/215177381-c007cc97-2661-435b-bce1-02aea2cd3516.png">
+
+
 ## discrete and continuous data
 
 ## general types of statistical studies
