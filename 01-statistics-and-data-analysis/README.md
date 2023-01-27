@@ -288,9 +288,48 @@ $$
 1.40 1.64 2.09 1.75 1.63 2.37 1.75 1.69
 ```
 
+- sample size $n = 40$
+- mean = 1.774
+- s = 0.390
+- min = 0.72
+- Q1 = 1.635
+- Q2 = Median = 1.77
+- Q3 = 2
+- max = 2.55
 
+**interquartile range** - IQR = Q3 - Q1 = 2 - 1.635 = 0.365
+
+- an outlier is any value that lies more than one and a half times the length of the box from either end of thebox
+    - lower inner fence:  Q1 - 1.5 * IQR
+    - upper inner fence:  Q3 + 1.5 * IQR
+- 1.635 - 1.5 * 0.365 and 2 + 1.15 * 0.365
+- anything outside that range is shown as an outlier
 
 ## discrete and continuous data
 
+- depending on the area of application, the data gathered may be discrete or continuous
+- both binary data and count data are discrete data
+- great distinctions are made between discrete and continuous data in probability theory
+- binary data and sample propertion:
+    - two categories are involves
+    - if there are n units involved in the data and x units is in category 1 and n - x units are in category 1
+    - the sample propertion in category 1 is x/n
+    - the sample proportion in category 2 is 1 - x/n
+
 ## general types of statistical studies
+
+1.  **designed experiment**
+    - the analyst chooses and controls range of factors
+    - nuisance factors would be equalized via the randomized process
+
+2.  **observational study**
+    - factors of interest can not be controlled
+    - it is at the mercy of nature
+
+3.  **retrospective study**
+
+    - historical data are used
+    - advantages:  no cost in collecting the data
+    - disadvantages:  data may be incomplete or inaccurate
+
 
