@@ -278,6 +278,8 @@ $$
 
 **table nicotine data**
 
+<img width="457" align="right" alt="Screenshot 2023-01-27 at 1 40 04 PM" src="https://user-images.githubusercontent.com/65584733/215182735-b3474169-f997-4af5-9a49-4c5e0173f73a.png">
+
 ```
 1.09 1.92 2.31 1.79 2.28 1.74 1.47 1.97
 0.85 1.24 1.58 2.03 1.70 2.17 2.55 2.11 
@@ -285,6 +287,8 @@ $$
 1.82 1.79 2.46 1.88 2.08 1.67 1.37 1.93 
 1.40 1.64 2.09 1.75 1.63 2.37 1.75 1.69
 ```
+
+
 
 ## discrete and continuous data
 
