@@ -271,6 +271,8 @@ $$
 - box-and-whisker plot enclosed the interquartile range of the data in a box that has median displayed within.
 - boxplot provides the viewer information about outliers which represent rare events
 
+<img src="https://www.isixsigma.com/wp-content/uploads/2019/07/Anatomy-of-a-Box-Plot.gif">
+
 ## discrete and continuous data
 
 ## general types of statistical studies
