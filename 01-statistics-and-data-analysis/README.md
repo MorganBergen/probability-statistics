@@ -49,7 +49,6 @@
 - for a statistical problem, the sample along with inferential statistics allow us to draw conclusions about the population, with inferential statistics making clear use of elements of probability. (inductive in nature)
 - for a probability problem we can draw conclusions about characteristics of hypothetical data taken from the population based on known features of the population (deductive in nature)
 
-
 **fundamental relationship between probability and inferential statistics**
 ```
          --------- probability ---------
@@ -59,7 +58,6 @@
          ---------- statistics ---------    
 
 ```
-
 - the procedure involves two different jobs, thos are
     1.  to estimate a parameter of the population through sample
     2.  testing hypotheses or conjectures/claims about the parameter
@@ -75,21 +73,21 @@
 ## pictorial and tabular methods in descriptive statistics
 visual representation of data is a powerful tool for understanding data, some examples are:
 
-1. [stem-and-leaf display](###stem-and-leaf-display)
+1. stem-and-leaf display
 
-2. [dotplots](###dotplots)
+2. dotplots
 
-3. [histograms](###histograms)
+3. histograms
 
-4. [boxplots](###boxplots)
+4. boxplots
 
-5. [frequency tables](###frequency-tables)
+5. frequency tables
 
-6. [pie charts](###pie-charts)
+6. pie charts
 
-7. [bar graphs](###bar-graphs)
+7. bar graphs
 
-8. [scatterplots](###scatterplots)
+8. scatterplots
 
 ### stem-and-leaf display
 
@@ -138,6 +136,8 @@ visual representation of data is a powerful tool for understanding data, some ex
 0.42 | 0.86 | 
 0.38 | 0.62 |
 0.43 | 0.46 |
+
+<img width="700px" alt="step" src="https://user-images.githubusercontent.com/65584733/215172132-ce8622d2-4566-4f92-85fe-6ec919cc6642.png">
 
 ### histograms
 
