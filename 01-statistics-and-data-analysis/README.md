@@ -150,7 +150,7 @@ visual representation of data is a powerful tool for understanding data, some ex
 
 - location measure in data set provide the analyst some quantitative measure of where the **data center** is in a sample mean.
 
-1.  **sample mean**
+### 1.  **sample mean**
 
 - suppose that the observations in a smple are $x_{1}, x_{2}, x_{3}, \cdots, x_{n}$, the sample mean denoted $\bar{x}$
 
@@ -160,7 +160,7 @@ $$ \bar{x} = \frac{\sum_{i=1}^{n} x_{i}}{n} = \frac{x_{1} + x_{2} + \cdots + x_{
 - one obvious measure is the sample mean (mathematical average), which is simply a numerical average.
 - the sample median is to reflect the central tendency of the sample and is uninfluenced by extreme values.
 
-2.  **sample median** 
+### 2.  **sample median** 
 
 - middle value in the observations of ordered data set.  It divides a data set into two equal parts, denoted by $\tilde{x}$
 
@@ -184,10 +184,11 @@ $$ \tilde{x} = x_{\frac{n+1}{2}} $$
     - note:  if the largest observation 79.0 was excluded from the sample, the resulting sample median for the n = 11 remaining observations would have been the single middle value 66.4 (the [n +1] = 2 6th ordered value, i.e. the 6th value in from either end of the ordered list
     - the sample mean is $\bar{x} = 68.01$ and the sample median is $\tilde{x} = 67.4$
 
-3.  **quartiles** divide the data set (sample or population) into four equal parts
-    - observations above the third quartile are Q3 constituting the upper quarter of the data set
-    - the second quartile Q2 is the median
-    - the first quartile Q1 separates the lower quarter from the upper three-quarters
+### 3.  **quartiles** 
+- divide the data set (sample or population) into four equal parts
+- observations above the third quartile are Q3 constituting the upper quarter of the data set
+- the second quartile Q2 is the median
+- the first quartile Q1 separates the lower quarter from the upper three-quarters
 
 **example**  beethovens symphony #9
 
@@ -195,7 +196,7 @@ $$ \tilde{x} = x_{\frac{n+1}{2}} $$
 - a data set (sample or population) can be even more finely divided using **percentiles**; the 99th percentile separates the highest 1% from the bottom 99%, and so on.
 - the mean is quite sensitive to a single outlier, whereas the median is not.  the median is a more robust measure of central tendency than the mean.
 
-4.  **trimmed mean**
+### 4.  **trimmed mean**
 
 - a trimmed mean is comprised betweeen $\bar{x}$ and $\tilde{x}$, and is a more robust measure of central tendency than the mean.  
 
@@ -231,8 +232,44 @@ $$ \bar{x_{tr(10)}} = \frac{0.43 + 0.47 + 0.49 + 0.52 + 0.75 + 0.79 + 0.62 + 0.4
     - variance or standard deviation
 - different samples or populations may have identical measures of center yet differ from one another in important ways.
 
-<img width="521" alt="Screenshot 2023-01-27 at 1 17 39 PM" src="https://user-images.githubusercontent.com/65584733/215177381-c007cc97-2661-435b-bce1-02aea2cd3516.png">
+**example** 
 
+<img width="400px" alt="Screenshot 2023-01-27 at 1 17 39 PM" src="https://user-images.githubusercontent.com/65584733/215177381-c007cc97-2661-435b-bce1-02aea2cd3516.png">
+
+<br>
+
+### 1.  **sample range**
+
+- simplest measure of sample variability is the sample range $X_{max} - X_{min}$
+- **interquartile range (IQR)** between the 75th percentile **(upper quartile)** and the 25th percentile **(lower quartile)**
+- the range can be very useful in statistical quality control
+- the question "how far is each x from the mean?", the one that is used most often is the sample standard deviation
+
+### 2.  **sample variance**
+
+the sample variance of $X_{1}, X_{2}, \cdots, X_{n}$ is denoted by $\sigma^{2}$
+
+$$
+\sigma^{2} = s^{2} = \frac{1}{n - 1} \sum_{i=1}^{n} (x_{i} - \bar{x})^{2}
+$$
+
+### 3.  **sample standard deviation**
+
+the sample standard deviation denoted by $s$ is the positive square root of the sample variance
+
+$$
+s = \sqrt{s^{2}}
+$$
+
+- both $s^{2}$ and $s$ are both nonnegative.  the unit for $s$ is the same as the unit for each of the $x_{i}s$
+
+### 4.  **five-number summaries and boxplots**
+
+- with $x_{1}, x_{2}, \cdots, x_{n}$, the five-number summary is given by the minimum, first quartile Q1, median, third quartile Q3, maximum.
+- a boxplot (box-and-whisker plot) is a way of graphically depicting groups of numerical data through their five-number summaries
+- a graphical tool to get an idea about the center, variability, and degree of asymmetry of sample
+- box-and-whisker plot enclosed the interquartile range of the data in a box that has median displayed within.
+- boxplot provides the viewer information about outliers which represent rare events
 
 ## discrete and continuous data
 
