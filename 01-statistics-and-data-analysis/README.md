@@ -273,6 +273,11 @@ $$
 
 <img src="https://www.isixsigma.com/wp-content/uploads/2019/07/Anatomy-of-a-Box-Plot.gif">
 
+- nicotine content was measured in a random sample of 40 cigarettes.  the data is displayed in the table
+- mild outliers:  0.72, 0.85, 2.55
+
+**table nicotine data**
+
 ## discrete and continuous data
 
 ## general types of statistical studies
