@@ -104,7 +104,7 @@ $$
 
 "n choose r"
 $$
-\binom{n}{r} = \frac{n!}{r!(n-r)!} \\
+    \binom{n}{r} = \frac{n!}{r!(n-r)!} \\
 $$
 
 - we might want to select $r$ objects from $n$ without regard to order
