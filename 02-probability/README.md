@@ -26,11 +26,9 @@
 - tossing a coin example
 
 $$
-S = \{H, T\} \\
-
-P(H) = \frac{1}{2} \\ 
-
-P(T) = \frac{1}{2} \\
+    S = \{H, T\} \\
+    P(H) = \frac{1}{2} \\ 
+    P(T) = \frac{1}{2} \\
 $$
 
 - the member of the sample space or the elements
