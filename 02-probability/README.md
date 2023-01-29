@@ -27,9 +27,7 @@
 
 $$
     S = \{H, T\} \newline
-
     P(H) = \frac{1}{2} \newline 
-    
     P(T) = \frac{1}{2} \newline
 $$
 
@@ -94,7 +92,7 @@ the number of permutations of $n$ objects is $n!$
 the number of permutation (ways to arrange) of $n$ distinct objects taken $r$ at a time is
 
 $$
-P(n, r) = \frac{n!}{(n-r)!} \\
+    P(n, r) = \frac{n!}{(n-r)!} \\
 $$
 
 **example**  in one year, three awards will be given for a class of 25 graduate student.
