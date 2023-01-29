@@ -327,9 +327,6 @@ $$
     - it is at the mercy of nature
 
 3.  **retrospective study**
-
     - historical data are used
     - advantages:  no cost in collecting the data
     - disadvantages:  data may be incomplete or inaccurate
-
-
