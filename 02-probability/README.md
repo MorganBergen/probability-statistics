@@ -49,7 +49,7 @@ $$
     - $S = \{1, 2, 3, 4, 5, 6\}$
     - $S = \{{odd}, {even}\}$
 - $S = \{ x | x \in \mathbb{R}, 2 ≤ x ≤ 4\}$
-- $S = \{ x | x $ is a city with population of 1 million or more $\}$
+- $S = \{ x | x $ is a city with population of 1 million or more \}$
 
 - a tree diagram can be used to list the elements of the sample space systematically
 
