@@ -151,7 +151,7 @@ the probability of an event A is the sum of the weights of all sample points in 
 
 $$
 0 \leq P(A) \leq 1 \\
-P(\empty) = 0 \\
+P(\varnothing) = 0 \\
 P(S) = 1 \\
 $$
 
