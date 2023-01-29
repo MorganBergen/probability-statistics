@@ -26,11 +26,9 @@
 - tossing a coin example
 
 $$
-S = \{H, T\} \\
-
-P(H) = \frac{1}{2} \\ 
-
-P(T) = \frac{1}{2} \\
+    S = \{H, T\} \\
+    P(H) = \frac{1}{2} \\ 
+    P(T) = \frac{1}{2} \\
 $$
 
 - the member of the sample space or the elements
@@ -46,12 +44,12 @@ $$
 
 **example 2.1**
 
-- topssing a coin $ S = \{H, T\} $
+- topssing a coin $S = \{H, T\}$
 - tossing a die
-    - $ S = \{1, 2, 3, 4, 5, 6\} $
-    - $ S = \{{odd}, {even}\} $
-- $ S = \{ x | x \in \mathbb{R}, 2 ≤ x ≤ 4\} $
-- $ S = \{ x | x $ is a city with population of 1 million or more $\} $
+    - $S = \{1, 2, 3, 4, 5, 6\}$
+    - $S = \{{odd}, {even}\}$
+- $S = \{ x | x \in \mathbb{R}, 2 ≤ x ≤ 4\}$
+- $S = \{ x | x $ is a city with population of 1 million or more $\}$
 
 - a tree diagram can be used to list the elements of the sample space systematically
 
