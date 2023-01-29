@@ -27,7 +27,9 @@
 
 $$
     S = \{H, T\} \newline
+
     P(H) = \frac{1}{2} \newline 
+    
     P(T) = \frac{1}{2} \newline
 $$
 
