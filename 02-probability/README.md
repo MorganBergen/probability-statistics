@@ -87,13 +87,42 @@ $$
 - **example**
     - if $M = \{x | 3 < x < 9\}$ and $N = \{y | 5 < y < 12\}$
     - then $M \cup N = \{x | 3 < x < 12\}$
+
+**venn diagram**
+- let the sample space be a rectangle and represent events by circles.
 - the relationship between events and the corresponding sample space can be illustrated graphically by Venn Diagram.
-- in a venn diagram, let the sample space be a rectangle and represent events by circles.
 
-![tree-0](https://user-images.githubusercontent.com/65584733/215615608-476198ef-d341-4b86-a286-669eba51efd2.jpg)
+    - $A \cup B$ is 7, 4, 2, 1, 6, 3
+    - $A \cap C$ is 2, 1
+    - $B' \cap A$ is 7, 4
+    - $A \cap B \cap C$ is 1
+    - $(A \cup B) \cap C'$ is 2, 7, 6
 
-![tree-1](https://user-images.githubusercontent.com/65584733/215616113-251e0905-3b2c-4cea-929c-996c0dcde2f4.jpg)
+**example**  flip a coin first, if a head occurs, flip it again; otherwise toss a die.
 
+$S = \{HH, HT, T_{1}, T_{2}, T_{3}, T_{4}, T_{5}, T_{6}\}$
+
+<img align="center" style="width: 300px;" src="https://user-images.githubusercontent.com/65584733/215615608-476198ef-d341-4b86-a286-669eba51efd2.jpg">
+
+<br>
+
+**example**  three items are selected at random from a process
+
+$S = \{DDD, DDN, DND, DNN, NDD, NDN, NND, NNN\}$
+
+<img align="center" style="width: 300px;" src="https://user-images.githubusercontent.com/65584733/215616113-251e0905-3b2c-4cea-929c-996c0dcde2f4.jpg">
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
 
 **event operations**
 - $A \cap \emptyset = \emptyset$
