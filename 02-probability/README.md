@@ -92,11 +92,13 @@ $$
 - let the sample space be a rectangle and represent events by circles.
 - the relationship between events and the corresponding sample space can be illustrated graphically by Venn Diagram.
 
-    - $A \cup B$ is 7, 4, 2, 1, 6, 3
-    - $A \cap C$ is 2, 1
-    - $B' \cap A$ is 7, 4
-    - $A \cap B \cap C$ is 1
-    - $(A \cup B) \cap C'$ is 2, 7, 6
+<img align="center" style="width: 300px;" src="https://user-images.githubusercontent.com/65584733/215618926-9c41e882-b93f-42bf-b21f-2ba8f10ec94b.jpg">
+
+- $A \cup B$ is 7, 4, 2, 1, 6, 3
+- $A \cap C$ is 2, 1
+- $B' \cap A$ is 7, 4
+- $A \cap B \cap C$ is 1
+- $(A \cup B) \cap C'$ is 2, 7, 6
 
 **example**  flip a coin first, if a head occurs, flip it again; otherwise toss a die.
 
@@ -111,18 +113,6 @@ $S = \{HH, HT, T_{1}, T_{2}, T_{3}, T_{4}, T_{5}, T_{6}\}$
 $S = \{DDD, DDN, DND, DNN, NDD, NDN, NND, NNN\}$
 
 <img align="center" style="width: 300px;" src="https://user-images.githubusercontent.com/65584733/215616113-251e0905-3b2c-4cea-929c-996c0dcde2f4.jpg">
-
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
 
 **event operations**
 - $A \cap \emptyset = \emptyset$
