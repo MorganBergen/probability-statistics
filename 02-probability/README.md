@@ -40,18 +40,23 @@ $$
     - a member of the sample space
     - a sample point
 
-- if the sample space has a large or infinite number of elements, we describe it by a state or rule
+- if the sample space has a finite number of elements, we may list the members
+- if the sample space has a large or infinite number of elements, we describe it by a **statement** or **rule**.
 
-**example 2.1**
-
+**example**
 - topssing a coin $S = \{H, T\}$
 - tossing a die
     - $S = \{1, 2, 3, 4, 5, 6\}$
     - $S = \{{odd}, {even}\}$
 - $S = \{ x | x \in \mathbb{R}, 2 ≤ x ≤ 4\}$
-- $S = \{ x | x $ is a city with population of 1 million or more \}$
+- $S = \{ x | x $ is a city with population of 1 million or more $\}$
 
-- a tree diagram can be used to list the elements of the sample space systematically
+**tree diagrams** can be used to list the elements of the sample space systematically
+
+**example**  
+
+- flip a coin first, if head occurs, flip it again; otherwise, toss a die
+- $S = \{HH, HT, T_{1}, T_{2}, T_{3}, T_{4}, T_{5}, T_{6}\}$
 
 ## events
 
