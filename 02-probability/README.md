@@ -85,6 +85,8 @@ $$
 - the relationship between events and the corresponding sample space can be illustrated graphically by Venn Diagram.
 - in a venn diagram, let the sample space be a rectangle and represent events by circles.
 
+![tree-0](https://user-images.githubusercontent.com/65584733/215615608-476198ef-d341-4b86-a286-669eba51efd2.jpg)
+
 
 
 **event operations**
@@ -117,8 +119,8 @@ if an operation can be performed in $n_{1}$ ways, and if for each of these a sec
 
 - we consider the unit position by two parts, 0, or not 0
     - if the units opsition is $0(n_{1} = 1)$
-        - $n_{2} = 5$ choices for the thousands position
-        - $n_{3} = 4$ choices for the hundreds position
+    - $n_{2} = 5$ choices for the thousands position
+    - $n_{3} = 4$ choices for the hundreds position
 
 **def 2.7 permutation**
 
