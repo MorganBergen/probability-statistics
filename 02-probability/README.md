@@ -58,10 +58,36 @@ $$
 **definition 2.2** an event is a subset of a sample space
 - **null set** denoted by $\emptyset$ is an event that contains no elements
 
-**definition 2.3**  the **complement** of an event A with respect to S is the subset of all elements of S that are not in A.  We denote the complement of A as the symbol A'
+**definition 2.3**  the **complement** of an event $A$ with respect to $S$ is the subset of all elements of $S$ that are not in $A$.  We denote the complement of $A$ as the symbol $A'$
+
+- **example**  let $R$ be the event that a red card is selected from an ordinary deck of 52 playing cards.
+- $S$ be the entire deck
+- $R'$ is the event that the card selected from the deck is not red but a black card.
+
+**definition 2.4**  the **intersection** of two events $A$ and $B$, denoted by the symbol $A \cap B$, is the event containng all elements that are common to $A$ and $B$.
+
+- **example** let $P$ be the event that a person selected at random while dining at a popular cafeteria is a taxpayer.  
+    - $Q$ is the event that the person is over 65 years of age
+    - the event $P \cap Q$ is the set of all taxpayers in the cafeteria who are over 65 years of age.
+
+**definition 2.5**  the two events $A$ and $B$ are **mutually exclusive** or **disjoint** if $A \cap B = \emptyset$, i.e. if $A$ and $B$ have no elements in common.  two events can not occur simultaneously.
+
+- **example** 
+    - let $A$ be the event that the program belongs to the NBC network.
+    - let $B$ be the event that the program belongs to the CBS network.
+    - $A$ and $B$ are mutually exclusive.
+
+**definition 2.6**  the **union** of the two events $A$ and $B$, denoted by the symbol $A \cup B$, is the event containing all the elements that belong to $A$ or $B$ or both.
+
+- **example**
+    - if $M = \{x | 3 < x < 9\}$ and $N = \{y | 5 < y < 12\}$
+    - then $M \cup N = \{x | 3 < x < 12\}$
+- the relationship between events and the corresponding sample space can be illustrated graphically by Venn Diagram.
+- in a venn diagram, let the sample space be a rectangle and represent events by circles.
+
+
 
 **event operations**
-
 - $A \cap \emptyset = \emptyset$
 - $A \cup \emptyset = A$
 - $A \cap A' = \emptyset$
@@ -93,7 +119,6 @@ if an operation can be performed in $n_{1}$ ways, and if for each of these a sec
     - if the units opsition is $0(n_{1} = 1)$
         - $n_{2} = 5$ choices for the thousands position
         - $n_{3} = 4$ choices for the hundreds position
-
 
 **def 2.7 permutation**
 
