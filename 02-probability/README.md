@@ -53,6 +53,24 @@ $$
 
 - a tree diagram can be used to list the elements of the sample space systematically
 
+## events
+
+**definition 2.2** an event is a subset of a sample space
+- **null set** denoted by $\emptyset$ is an event that contains no elements
+
+**definition 2.3**  the **complement** of an event A with respect to S is the subset of all elements of S that are not in A.  We denote the complement of A as the symbol A'
+
+**event operations**
+
+- $A \cap \emptyset = \emptyset$
+- $A \cup \emptyset = A$
+- $A \cap A' = \emptyset$
+- $A \cup A' = S$
+- $S' = \emptyset$
+- $\emptyset' = S$
+- $(A \cap B)' = A' \cup B'$
+- $(A \cup B)' = A' \cap B'$
+
 ## counting sample points
 
 - **combinatorics** - counting rules in set theory.  this provides the idea of the principles of enumeration, counting samplw ponts in the **sample space**
