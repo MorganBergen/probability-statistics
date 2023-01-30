@@ -103,9 +103,7 @@ $$
 **theorem 2.8**  the number of combinations (ways of choosing, **regardless of order** of $n$ distinct objects taken $r$ at a time is...
 
 "n choose r"
-$$
-    \binom{n}{r} = \frac{n!}{r!(n-r)!} \\
-$$
+$\binom{n}{r} = \frac{n!}{r!(n-r)!}$
 
 - we might want to select $r$ objects from $n$ without regard to order
 - these selections are called **combinations**
