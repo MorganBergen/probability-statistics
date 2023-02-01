@@ -94,6 +94,7 @@ $$
 
 <img align="center" style="width: 300px;" src="https://user-images.githubusercontent.com/65584733/215618926-9c41e882-b93f-42bf-b21f-2ba8f10ec94b.jpg">
 
+**properties**
 - $A \cup B$ is 7, 4, 2, 1, 6, 3
 - $A \cap C$ is 2, 1
 - $B' \cap A$ is 7, 4
