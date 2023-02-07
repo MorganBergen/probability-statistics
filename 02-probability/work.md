@@ -64,10 +64,31 @@ there are 7 unchosen digits to choose from in total.
 - for index position 0 there are 6 digits to choose from other than 0 (say we choose 1)
 - for index position 1 there are 6 digits to choose from other than 1 (say we choose 0)
 - for index position 2 there are 5 digits to choose from other than 0 and 1 (say we choose 2)
+therefore there are $(6)*(6)*(5) = 180$ three-digit numbers that can be formed from the digits 0, 1, 2, 3, 4, 5, 6 if each digit can be used only once.
 
 **b.  how many of these are odd numbers?**
 
+there are 7 unchosen digits to choose from in total
+- for index position 2 there are 3 digits to choose from since the only odd digis are 1, 3, 5 (say we choose 5)
+- for index position 0 there are 5 digits to choose from since 0 can't be the first digit and 5 is already chosen (say we choose 1)
+- for index position 1 there are 5 digits to choose from since 1 and 5 are already chosen (say we choose 0)
+therefore there are $(5)*(5)*(3) = 75$ odd numbers that can be formed from the digits 0, 1, 2, 3, 4, 5, 6 if each digit can be used only once.
+
 **c.  how many are greater than 330?**
+
+case 1:  greater than 330 and less than 400 (precisely 340 ≤ x ≤ 365)
+- index 0 has 1 choice since we are only considering 3 (say we choose 3)
+- index 1 has 3 choices since we are only considering 4, 5, 6 (say we choose 4)
+- index 2 has 5 choices since we exclude 3, 4 (say we choose 0)
+so, there are $(1)*(3)*(5) = 15$ for case 1
+
+case 2:  greater than 400 (precisely 401 ≤ x ≤ 654)
+- index 0 has 3 choices since we are only considering greater than 3, so 4, 5, 6 (say we choose 4)
+- index 1 has 6 choices since we are excluding 4 (say we choose 0)
+- index 2 has 5 choices since we exclude 4, 0 (say we choose 1)
+so, there are $(3)(6)(5) = 90$ for case 2
+
+therefore, case 1 + case 2 = $(1)*(3)*(5) + (3)(6)(5) = 105$ numbers greater than 330
 
 ## 2.37
 
