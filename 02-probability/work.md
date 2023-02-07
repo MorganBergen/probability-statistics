@@ -68,6 +68,8 @@ therefore there are $(6)*(6)*(5) = 180$ three-digit numbers that can be formed f
 
 **b.  how many of these are odd numbers?**
 
+![Untitled 1](https://user-images.githubusercontent.com/65584733/217299141-90850f84-b3e7-48f8-975f-f6e3ae82be53.png)
+
 there are 7 unchosen digits to choose from in total
 - for index position 2 there are 3 digits to choose from since the only odd digis are 1, 3, 5 (say we choose 5)
 - for index position 0 there are 5 digits to choose from since 0 can't be the first digit and 5 is already chosen (say we choose 1)
@@ -89,6 +91,9 @@ case 2:  greater than 400 (precisely 401 ≤ x ≤ 654)
 so, there are $(3)(6)(5) = 90$ for case 2
 
 therefore, case 1 + case 2 = $(1)*(3)*(5) + (3)(6)(5) = 105$ numbers greater than 330
+
+![Untitled 2](https://user-images.githubusercontent.com/65584733/217298997-0b3b6e1f-5fc6-4ebb-84fc-ec975d0f36c4.png)
+
 
 ## 2.37
 
