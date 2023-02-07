@@ -285,5 +285,49 @@ $$
 P(A_{1} \cup A_{2} \cup \dots \cup A_{n}) = P(A_{1}) + P(A_{2}) + \dots + P(A_{n}) \\
 $$
 
-- a collection of events $\{A_{1}, A_{2}, \dots, A_{n}\}$ of a sample space $S$ is called a 
+- a collection of events $\{A_{1}, A_{2}, \dots, A_{n}\}$ of a sample space $S$ is called a partition of $S$ if $A_{1}, A_{2}, \cdots, A_{n}$ are mutually exclusive and $A_{1} \cup A_{2} \cup \cdots \cup A_{n} = S$
+
+## conditional probability
+
+**conditional probability** $P(A|B)$
+
+- sometimes the occurrence of an event is influenced or related with some other event
+- hence we must take this restriction or the availability of certain limited information into consideration about the outcome of the experiment.
+- "the probability of an event $B$ occurs given that $A$ occurs"
+
+## multiplicative rules
+
+- multiplying the formula of definition 2.9 (shown below) by $P(A)$, we obtain the **multiplicative rule**, which enables us to calculate the probability that two events will both occur.
+
+**definition 2.9**
+
+$$
+P(B | A) = \frac{P(A \cap B)}{P(A)} \\
+\text{if } P(A) > 0 \\
+$$
+
+## bayes' rule
+
+**theorem 2.17**  if the events $B_{1}, B_{2}, \dots, B_{n}$ constitute a partition of the sample space $S$ such that $P(B_{i}) ≠ 0$ for $i = 1, 2, \dots, k$, then
+
+$$
+
+P(B_{r} | A) = \frac{P(B_{r} \cap A)}{\sum_{i = 1}^{k} P(B_{i} \cap A)} = \frac{P(B_{r} \cap A)}{\sum_{i = 1}^{k} P(B_{i} | A) P(B_{i})} \\
+
+$$
+
+- it can be proved by the definition of conditional probability, with using the theorem 2.16 in the denominator
+
+$$
+
+P(B_{r} | A) = P(B_{r} \cap A) / P(A) 
+
+$$
+
+- useful in problems where $P(B_{i} | A)$ are not known but $P(A | B_{i})$ and $P(B_{i})$ are known,
+
+- $P(B_{i})$ are **priors**
+- $P(A | B_{i})$ are **likelihoods**
+- $P(B_{i} | A)$ are **posteriors**
+
 
