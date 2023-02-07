@@ -30,29 +30,38 @@ jan 31 2023
 
 ## 2.14
 
-**if $S = \{0, 1, 2, 3, 4, 5, 6, 7, 8, 9\}$ and $A \{0, 2, 4, 6, 8\}$, $B = \{1, 3, 5, 7, 9\}$, $C = \{2, 3, 4, 5\}$, and $D = \{1, 6, 7\}$, list the elements of the sets corresponding to the following events:**
+**if $S = \{0, 1, 2, 3, 4, 5, 6, 7, 8, 9\}$ and $A = \{0, 2, 4, 6, 8\}$, $B = \{1, 3, 5, 7, 9\}$, $C = \{2, 3, 4, 5\}$, and $D = \{1, 6, 7\}$, list the elements of the sets corresponding to the following events:**
+    
+**a.  $A \cup B$** $= \{0, 1, 2, 3, 4, 5, 6, 7, 8, 9\}$
 
-**a.  $A \cup B$**
+**b.  $A \cap B$** $= \{0, 2, 4, 6, 8\}$
 
-**b.  $A \cap B$**
+**c.  $C'$** $= \{0, 1, 6, 7, 8, 9\}$
 
-**c.  $C'$**
+**d.  $(C' \cap D) \cup B$** $= \{1, 6, 7, 3, 5, 9\}$
 
-**d.  $(C' \cap D) \cup B$**
+**e.  $(S \cap C)'$** $= \{0, 1, 6, 7, 8, 9\}$
 
-**e.  $(S \cap C)'$**
-
-**f.  $A \cap C \cap D'$**
+**f.  $A \cap C \cap D'$** $= \{2, 4\}$
 
 ## 2.34
 
 **a.  how many distinct permutations can be made from the letters of the word _COLUMNS_?**
 
+$C = n_{1}, O = n_{2}, L = n_{3}, M = n_{4}, U = n_{5}, S = n_{6}$
+where there are total $n = 7$ elements and no letter can appear no more than just once therefore according to the fundamental counting principle there are $n! = 7! = 5040$ permutations
+
 **b.  how many of these permutations start with the letter _M_?**
 
+the required number of permutations where $M = n_{4}$ is fixed at the first index position leaves there to be $n - 1 = 6$ elements to be permuted therefore there are $n! = 6! = 720$ permutations.
 ## 2.36
 
 **a.  how many three-digit numbers can be formed from the digits 0, 1, 2, 3, 4, 5, 6 if each digit can be used only once?**
+
+there are 7 unchosen digits to choose from in total.  
+- for index position 0 there are 6 digits to choose from other than 0 (say we choose 1)
+- for index position 1 there are 6 digits to choose from other than 1 (say we choose 0)
+- for index position 2 there are 5 digits to choose from other than 0 and 1 (say we choose 2)
 
 **b.  how many of these are odd numbers?**
 
@@ -64,7 +73,7 @@ jan 31 2023
 
 ## 2.50
 
-**assuming that all elements of $S$ in exercise 2.8 on page 42 are equally likely to occur, find
+**assuming that all elements of $S$ in exercise 2.8 on page 42 are equally likely to occur, find**
 
 **a.  the probability of event $A$**
 
