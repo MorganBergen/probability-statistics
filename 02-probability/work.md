@@ -58,6 +58,8 @@ the required number of permutations where $M = n_{4}$ is fixed at the first inde
 
 **a.  how many three-digit numbers can be formed from the digits 0, 1, 2, 3, 4, 5, 6 if each digit can be used only once?**
 
+![Untitled](https://user-images.githubusercontent.com/65584733/217289039-4407d8a6-84ad-4b7a-91ff-cd0aeb77de1c.png)
+
 there are 7 unchosen digits to choose from in total.  
 - for index position 0 there are 6 digits to choose from other than 0 (say we choose 1)
 - for index position 1 there are 6 digits to choose from other than 1 (say we choose 0)
