@@ -186,7 +186,19 @@ $\binom{9}{3} = \frac{9!}{3!(9-3)!} = \frac{9!}{(3!)(6!)} = \frac{9(8)(7)}{3(2)(
 
 **a manufacturer of a flu vaccine is concerned about the quality of its flu serum.  batches of serum are processed by three different departments having rejection rates of 0.10, 0.08, 0.12 respectively.  the inspections by the three departments are sequential and independent**
 
+- let $P(R_{1}) = 0.10$ be the rejection rate of the first department
+- let $P(R_{2}) = 0.08$ be the rejection rate of the second department
+- let $P(R_{3}) = 0.12$ be the rejection rate of the third department
+- given that the events are independent and sequential means that the probability of the event is the product of the probabilities of the individual events
+- $P(R_{1} \cap R_{2} \cap R_{3}) = P(R_{1}) * P(R_{2}) * P(R_{3}) = 0.10 * 0.08 * 0.12 = 0.0096$
+
 **a.  what is the probability that the batch of serum survives the first departmental inspection but is rejected by the second department?**
+
+- let $P(A_{1}) = 1 - P(R_{1}) = 1 - 0.10 = 0.90$ be the probability that the batch of serum survives the first departmental inspection
+- let $P(A_{2}) = 1 - P(R_{2}) = 1 - 0.08 = 0.92$ be the probability that the batch of serum survives the second departmental inspection
+- let $P(A_{3}) = 1 - P(R_{3}) = 1 - 0.12 = 0.88$ be the probability that the batch of serum survives the third departmental inspection
+
+therefore, the probability that the first departmental inspection is passed and the second departmental inspection is rejected is, $P(A_{1} \cap R_{2}) = (0.9)(0.08) = 0.072$
 
 **b.  what is the probability that a batch of serum is reject by the third department?**
 
