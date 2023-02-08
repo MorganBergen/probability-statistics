@@ -156,9 +156,28 @@ $P(A \cap C) = 7(1/36) = 7/36 = 7/108$
 
 **if 3 books are picked at random from a shelf containing 5 novels, 3 books of poems, and a dictionary, what is the probability that**
 
+the number of combinations (ways of choosing, regardless of order and without replacement) of $N = 9$ distinct objects taken $R = 3$ at a time is found in theorem 2.8 of combinatorics
+
+$S = \{n_{1}, n_{2}, n_{3}, n_{4}, n_{5}, p_{1}, p_{2}, p_{3}, d\}$
+
+$\binom{N}{R} = \frac{N!}{R!(N-R)!}$ 
+
+$\binom{9}{3} = \frac{9!}{3!(9-3)!} = \frac{9!}{3!6!} = \frac{9*8*7}{3*2*1} = \frac{504}{6} = 84$
+
+- where $N = 9$ is the total number of objects
+- and $R = 3$ is the number of objects to be chosen
+
 **a.  the dictionary is selected?**
 
+- number of ways to select 1 dictionary and 2 other books is,
+- $\binom{1}{1} * \binom{8}{2} = \frac{1!}{1!(1-1)!} * \frac{8!}{2!(8-2)!} = \frac{1}{1} * \frac{8*7}{2*1} = 28$
+- therefore, the probability of selecting the dictionary is $28/84 = 7/21 = 1/3$
+
 **b.  2 novels and 1 book of poems are selected?**
+
+- number of ways to select 2 novels and 1 poem is,
+- $\binom{5}{2} * \binom{3}{1} = \frac{5!}{2!(5-2)!} * \frac{3!}{1!(3-1)!} = \frac{5*4}{2*1} * \frac{3}{1} = 30$
+- therefore the probability of selecting 2 novels and 1 poem is $30/84 = 5/14$
 
 ## 2.78
 
