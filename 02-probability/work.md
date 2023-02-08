@@ -162,7 +162,7 @@ $S = \{n_{1}, n_{2}, n_{3}, n_{4}, n_{5}, p_{1}, p_{2}, p_{3}, d\}$
 
 $\binom{N}{R} = \frac{N!}{R!(N-R)!}$ 
 
-$\binom{9}{3} = \frac{9!}{3!(9-3)!} = \frac{9!}{3!6!} = \frac{9*8*7}{3*2*1} = \frac{504}{6} = 84$
+$\binom{9}{3} = \frac{9!}{3!(9-3)!} = \frac{9!}{(3!)(6!)} = \frac{9(8)(7)}{3(2)(1)} = \frac{504}{6} = 84$
 
 - where $N = 9$ is the total number of objects
 - and $R = 3$ is the number of objects to be chosen
@@ -170,14 +170,17 @@ $\binom{9}{3} = \frac{9!}{3!(9-3)!} = \frac{9!}{3!6!} = \frac{9*8*7}{3*2*1} = \f
 **a.  the dictionary is selected?**
 
 - number of ways to select 1 dictionary and 2 other books is,
-- $\binom{1}{1} * \binom{8}{2} = \frac{1!}{1!(1-1)!} * \frac{8!}{2!(8-2)!} = \frac{1}{1} * \frac{8*7}{2*1} = 28$
+- $\binom{1}{1}\binom{8}{2} = \frac{1!}{1!(1-1)!}\frac{8!}{2!(8-2)!} = \frac{1}{1}\frac{8(7)}{2(1)} = 28$
 - therefore, the probability of selecting the dictionary is $28/84 = 7/21 = 1/3$
 
 **b.  2 novels and 1 book of poems are selected?**
 
 - number of ways to select 2 novels and 1 poem is,
-- $\binom{5}{2} * \binom{3}{1} = \frac{5!}{2!(5-2)!} * \frac{3!}{1!(3-1)!} = \frac{5*4}{2*1} * \frac{3}{1} = 30$
+- $(\binom{5}{2})(\binom{3}{1}) = (\frac{5!}{2!(5-2)!})(\frac{3!}{1!(3-1)!}) = (\frac{(5)(4)}{(2)(1)})(\frac{3}{1}) = 30$
 - therefore the probability of selecting 2 novels and 1 poem is $30/84 = 5/14$
+
+<img src="https://user-images.githubusercontent.com/65584733/217662549-c2f67eb2-2fe4-4627-9aeb-e299ba8d59d9.png" width="850">
+
 
 ## 2.78
 
