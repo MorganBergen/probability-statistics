@@ -93,7 +93,7 @@ so, there are $(3)(6)(5) = 90$ for case 2
 therefore, case 1 + case 2 = $(1)*(3)*(5) + (3)(6)(5) = 105$ numbers greater than 330
 
 
-<img src="https://user-images.githubusercontent.com/65584733/217298997-0b3b6e1f-5fc6-4ebb-84fc-ec975d0f36c4.png" height="200">
+<img src="https://user-images.githubusercontent.com/65584733/217298997-0b3b6e1f-5fc6-4ebb-84fc-ec975d0f36c4.png" height="300">
 
 
 ## 2.37
@@ -122,6 +122,8 @@ $P(C) = 12(1/36) = 12/36 = 1/3$
 **c.  the probability of event $A \cap C$**
 
 $P(A \cap C) = 7(1/36) = 7/36 = 7/108$
+
+<img src="https://user-images.githubusercontent.com/65584733/217575279-388eb3d0-bc96-41f2-8d64-8c77b3c36c07.png" height="850">
 
 ## 2.56
 
