@@ -58,7 +58,7 @@ the required number of permutations where $M = n_{4}$ is fixed at the first inde
 
 **a.  how many three-digit numbers can be formed from the digits 0, 1, 2, 3, 4, 5, 6 if each digit can be used only once?**
 
-![Untitled](https://user-images.githubusercontent.com/65584733/217289039-4407d8a6-84ad-4b7a-91ff-cd0aeb77de1c.png)
+<img src="https://user-images.githubusercontent.com/65584733/217289039-4407d8a6-84ad-4b7a-91ff-cd0aeb77de1c.png" width="200" height="200">
 
 there are 7 unchosen digits to choose from in total.  
 - for index position 0 there are 6 digits to choose from other than 0 (say we choose 1)
@@ -68,7 +68,7 @@ therefore there are $(6)*(6)*(5) = 180$ three-digit numbers that can be formed f
 
 **b.  how many of these are odd numbers?**
 
-![Untitled 1](https://user-images.githubusercontent.com/65584733/217299141-90850f84-b3e7-48f8-975f-f6e3ae82be53.png)
+<img src="https://user-images.githubusercontent.com/65584733/217299141-90850f84-b3e7-48f8-975f-f6e3ae82be53.png" width="200" height="200">
 
 there are 7 unchosen digits to choose from in total
 - for index position 2 there are 3 digits to choose from since the only odd digis are 1, 3, 5 (say we choose 5)
@@ -92,14 +92,20 @@ so, there are $(3)(6)(5) = 90$ for case 2
 
 therefore, case 1 + case 2 = $(1)*(3)*(5) + (3)(6)(5) = 105$ numbers greater than 330
 
-![Untitled 2](https://user-images.githubusercontent.com/65584733/217298997-0b3b6e1f-5fc6-4ebb-84fc-ec975d0f36c4.png)
+
+<img src="https://user-images.githubusercontent.com/65584733/217298997-0b3b6e1f-5fc6-4ebb-84fc-ec975d0f36c4.png" height="200">
 
 
 ## 2.37
 
 **in how many ways can 4 boys and 5 girls sit in a row if the boys and girls must alternate?**
 
+according to the fundamental counting principle if an operation can be performed in $n_{1}$ ways, and if for each of these a second operation can be performed in $n_{2}$ ways, then these two operations can be performed together in $n_{1} * n_{2}$ ways.
 
+$S = \{b, b, b, b, g, g, g, g, g\}$
+- the first operation which consists of the number of permutations of 5 girls is $n_{1} = 5! = 120$ different ways
+- the second operation which consists of the number of permutations of 4 boys is $n_{2} = 4! = 24$ different ways
+- therefore $n_{1} * n_{2} = 120 * 24 = 2880$ ways in which 4 boys and 5 girls can sit in a row with the given condition that boys and girl must alternate.
 
 ## 2.50
 
@@ -107,9 +113,15 @@ therefore, case 1 + case 2 = $(1)*(3)*(5) + (3)(6)(5) = 105$ numbers greater tha
 
 **a.  the probability of event $A$**
 
+$P(A) = 10(1/36) = 10/36 = 5/18$
+
 **b.  the probability of event $C$**
 
+$P(C) = 12(1/36) = 12/36 = 1/3$
+
 **c.  the probability of event $A \cap C$**
+
+$P(A \cap C) = 7(1/36) = 7/36 = 7/108$
 
 ## 2.56
 
