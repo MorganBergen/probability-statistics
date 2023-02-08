@@ -99,6 +99,8 @@ therefore, case 1 + case 2 = $(1)*(3)*(5) + (3)(6)(5) = 105$ numbers greater tha
 
 **in how many ways can 4 boys and 5 girls sit in a row if the boys and girls must alternate?**
 
+
+
 ## 2.50
 
 **assuming that all elements of $S$ in exercise 2.8 on page 42 are equally likely to occur, find**
