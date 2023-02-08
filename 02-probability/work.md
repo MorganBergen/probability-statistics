@@ -206,6 +206,9 @@ therefore, the probability that the first departmental inspection is passed and 
 
 - since the events are sequential in nature, a batch that was reject by the third department implies that the first and second batch are rejected, therefore $P(A_{1} \cap A_{2} \cap R_{3}) = (0.9)(0.92)(0.12) = 0.09936$
 
+![a](https://user-images.githubusercontent.com/65584733/217670715-3a2d6e71-f733-430c-9bf2-4e3b5521f91d.png)
+
+
 ## 2.82
 
 **for married couples living, in a certain suburb, the probability that the husband will vote on a bond referendum is 0.21, the probability that the wife will vote on the referendum is 0.28, and the probability that both the husband and the wife will vote is 0.15.  what is the probability that**
