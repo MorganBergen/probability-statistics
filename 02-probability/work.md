@@ -149,6 +149,9 @@ $P(A \cap C) = 7(1/36) = 7/36 = 7/108$
 - $P(B \cup F)' = 1 - P(B \cup F)$
 - $P(B \cup F)' = 1 - 0.27 = 0.73$
 
+<img src="https://user-images.githubusercontent.com/65584733/217625296-89b01780-141a-4e9d-be41-13fcf961520f.png" width="850">
+
+
 ## 2.60
 
 **if 3 books are picked at random from a shelf containing 5 novels, 3 books of poems, and a dictionary, what is the probability that**
