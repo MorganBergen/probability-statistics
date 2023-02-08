@@ -131,7 +131,23 @@ $P(A \cap C) = 7(1/36) = 7/36 = 7/108$
 
 **a.  what is the probability that the defect is the brakes or the fueling system if the probability of defects in both systems simultaneously is 0.15?**
 
+"both systems simultaneously" 
+- means that the probability of the defect being in both is $0.15$
+- $P(B \cap F) = 0.15$
+
+"what is the probability that the defect is the brakes or fueling system" 
+- since we were given $P(B \cap F) = 0.15$
+- $P(B \cup F) = P(B) + P(F) - P(B \cap F)$
+- $P(B \cup F) = 0.25 + 0.17 - 0.15 = 0.27$
+- $P(B \cup F) = 0.27$
+- therefore the probability that the defect is the brakes or fueling system is $0.27$
+
 **b.  what is the probability that there are no defects in either the brakes or the fueling system?**
+
+"no defects in either the brakes or fueling system"
+- means that the probability of the defect is not in either which is complementary to $P(B \cup F)$
+- $P(B \cup F)' = 1 - P(B \cup F)$
+- $P(B \cup F)' = 1 - 0.27 = 0.73$
 
 ## 2.60
 

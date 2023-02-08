@@ -6,7 +6,21 @@
     - [definition 3.1](#definition-31)
     - [example 3.1](#example-31)
     - [example 3.3](#example-33)
+    - [example 3.5](#example-35)
+    - [discrete random variable](#discrete-random-variable)
+    - [continuous random variable](#continuous-random-variable)
+    - [definition 3.2 discrete sample space](#definition-32-discrete-sample-space)
+    - [definition 3.3 continuous sample space](#definition-33-continuous-sample-space)
 2.  [discrete probability distributions](#discrete-probability-distributions)
+    - [definition 3.4 probability mass function](#definition-34-probability-mass-function)
+    - [example 3.6](#example-36)
+    - [example 3.8](#example-38)
+    - [example 3.9](#example-39)
+    - [definition 3.5](#definition-35)
+    - [example 3.10](#example-310)
+    - [figure probability mass function plot](#probability-mass-function-plot)
+    - [figure probability histogram](#probability-histogram)
+    - [figure discrete cumulative distribution function](#discrete-cumulative-distribution-function)
 3.  [continuous probability distributions](#continuous-probability-distributions)
 4.  [joint probability distributions](#joint-probability-distributions)
 
@@ -17,7 +31,7 @@
 
 ### definition 3.1
 
-**a random variable is a function that associates a real number with each element in the sample space**
+**a random variable rv is a function that associates a real number with each element in the sample space**
 
 - the function's domain is the sample space and it's range is the set of real numbers $\mathbb{R}$
 - one and only one numerical value is assigned to each sample point x
@@ -27,4 +41,87 @@
 
 ### example 3.1
 
+**two balls are drawn in succession without replacement from a box containing 4 red balls and 3 black balls.**
+
+- the possible outcomes and the values y of the random variable Y, where Y is the number of red balls are
+
+| sample space | y |
+|:------------:|:-:|
+|  RR          | 2 |
+|  RB          | 1 |
+|  BR          | 1 |
+|  BB          | 0 |
+
+**number of defective (D) products when 3 products are tested**
+
+|sample space| x: values of X |
+|:----------:|:--------------:|
+| DDD        | 3              |
+| DDN        | 2              |
+| DND        | 2              |
+| DNN        | 1              |
+| NDD        | 2              |
+| NDN        | 1              |
+| NND        | 1              |
+| NNN        | 0              |
+
 ### example 3.3 
+
+**components from the production line are defective or not defective**
+
+- define the random variable $X$ by
+
+$$
+f(x) = 
+\begin{cases} 
+        1, \text{ if the component is defective} \\
+        0, \text{ if the component is not defective} \\
+\end{cases}
+$$
+
+- this random variable is categorical in nature
+
+### example 3.5
+**a process will be evaluated by sampling items until a defective item is observed**
+
+- define $X$ by the number of consecutive items observed
+
+| sample space | x |
+|:------------:|:-:|
+| D            | 1 |
+| ND           | 2 |
+| NND          | 3 |
+| ...          |  ... |
+
+
+### discrete random variable
+
+- according to the _countability_ of the sample space, which is measurable, it can be either discrete or continuous
+
+- **discrete random variable** is a random variable whose sample space is discrete, if a random variable takes on only a countable number of distinct values
+    - if the set of possible outcomes is countable
+    - often this repressents count data, such as the number of defectives, highway fatalities, etc.
+
+### continuous random variable
+
+- **continuous random variable** if a random variable can take on values on a continuous scale
+    - often represents measured data, such as heights, weights, temperatures, distance, or life periods
+
+### definition 3.2 discrete sample space
+
+**discrete sample space**  if a sample space contains a _finite number of possibilities_ or an unending sequence with as many elements as there are whole numbers.
+
+### definition 3.3 continuous sample space
+
+**continuous sample space** if a sample space contains an infinite number of possibilities equal to the number of points on a line segment.
+
+
+    definition 3.4 probability mass function
+    example 3.6
+    example 3.8
+    example 3.9
+    definition 3.5
+    example 3.10
+    figure probability mass function plot](#probability-mass-function-plot)
+    figure probability histogram](#probability-histogram)
+    figure discrete cumulative distribution function](#discrete-cumulative-distribution-function)
