@@ -46,10 +46,10 @@ $$
 **example**
 - topssing a coin $S = \{H, T\}$
 - tossing a die
-    - $S = \{1, 2, 3, 4, 5, 6\}$
-    - $S = \{{odd}, {even}\}$
+- $S = \{1, 2, 3, 4, 5, 6\}$
+- $S = \{{odd}, {even}\}$
 - $S = \{ x | x \in \mathbb{R}, 2 ≤ x ≤ 4\}$
-- $S = \{ x | x$ is a city with population of 1 million or more $\}$
+- $S = \{ x | x \text{is a city with population of 1 million or more} \}$
 
 **tree diagrams** can be used to list the elements of the sample space systematically
 
@@ -163,7 +163,7 @@ the number of permutations of $n$ objects is $n!$
 the number of permutation (ways to arrange) of $n$ distinct objects taken $r$ at a time is
 
 $$
-    P(n, r) = \frac{n!}{(n-r)!} \\
+P(n, r) = \frac{n!}{(n-r)!} \\
 $$
 
 **example**  in one year, three awards will be given for a class of 25 graduate student.
@@ -195,13 +195,13 @@ $$
 **permutation** - order matters the number of permutations of $n$ distinct objects taken $r$ at a time
 
 $$
-P(n, r) = \frac{n!}{(n-r)!} \\
+P(n, r) = \frac{n!}{(n-r)!}
 $$
 
 **combination** - order does not matter
 
 $$
-C(n, r) = \binom{n}{r} = \frac{n!}{r!(n-r)!} \\
+C(n, r) = \binom{n}{r} = \frac{n!}{r!(n-r)!}
 $$
 
 ### probability of event
@@ -311,17 +311,13 @@ $$
 **theorem 2.17**  if the events $B_{1}, B_{2}, \dots, B_{n}$ constitute a partition of the sample space $S$ such that $P(B_{i}) ≠ 0$ for $i = 1, 2, \dots, k$, then
 
 $$
-
-P(B_{r} | A) = \frac{P(B_{r} \cap A)}{\sum_{i = 1}^{k} P(B_{i} \cap A)} = \frac{P(B_{r} \cap A)}{\sum_{i = 1}^{k} P(B_{i} | A) P(B_{i})} \\
-
+P(B_{r} | A) = \frac{P(B_{r} \cap A)}{\sum_{i = 1}^{k} P(B_{i} \cap A)} = \frac{P(B_{r} \cap A)}{\sum_{i = 1}^{k} P(B_{i} | A) P(B_{i})}
 $$
 
 - it can be proved by the definition of conditional probability, with using the theorem 2.16 in the denominator
 
 $$
-
 P(B_{r} | A) = P(B_{r} \cap A) / P(A) 
-
 $$
 
 - useful in problems where $P(B_{i} | A)$ are not known but $P(A | B_{i})$ and $P(B_{i})$ are known,
