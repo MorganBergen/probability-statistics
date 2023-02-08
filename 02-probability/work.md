@@ -200,6 +200,8 @@ $\binom{9}{3} = \frac{9!}{3!(9-3)!} = \frac{9!}{(3!)(6!)} = \frac{9(8)(7)}{3(2)(
 
 therefore, the probability that the first departmental inspection is passed and the second departmental inspection is rejected is, $P(A_{1} \cap R_{2}) = (0.9)(0.08) = 0.072$
 
+![a](https://user-images.githubusercontent.com/65584733/217669608-e60e037d-ad74-4128-b3b9-43cdc6234d63.png)
+
 **b.  what is the probability that a batch of serum is reject by the third department?**
 
 ## 2.82
