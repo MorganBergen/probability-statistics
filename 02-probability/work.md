@@ -8,25 +8,7 @@ jan 31 2023
 
 **exercises**
 
-[2.14](#214)
-
-[2.34](#234)
-
-[2.36](#236)
-
-[2.50](#250)
-
-[2.56](#256)
-
-[2.60](#260)
-
-[2.78](#278)
-
-[2.82](#282)
-
-[2.95](#295)
-
-[2.100](#2100)
+[2.14](#214), [2.34](#234), [2.36](#236), [2.50](#250), [2.56](#256), [2.60](#260), [2.78](#278), [2.82](#282), [2.95](#295), [2.100](#2100)
 
 ## 2.14
 
@@ -208,20 +190,44 @@ therefore, the probability that the first departmental inspection is passed and 
 
 ![a](https://user-images.githubusercontent.com/65584733/217670715-3a2d6e71-f733-430c-9bf2-4e3b5521f91d.png)
 
-
 ## 2.82
 
 **for married couples living, in a certain suburb, the probability that the husband will vote on a bond referendum is 0.21, the probability that the wife will vote on the referendum is 0.28, and the probability that both the husband and the wife will vote is 0.15.  what is the probability that**
 
+- the following is given in the question,
+- $P(H) = 0.21$ is the probability that the husband will vote
+- $P(W) = 0.28$ is the probability that the wife will vote
+- $P(W') = 1 - P(W) = 1 - 0.28 = 0.72$ is the probability that the wife will not vote
+- $P(H') = 1 - P(H) = 1 - 0.21 = 0.79$ is the probability that the husband will not vote
+- $P(H \cap W) = 0.15$ is the probability that both the husband and the wife will vote
+
 **a.  at least one member of a married couple will vote?**
+
+- $P(H \cup W) = P(H) + P(W) - P(H \cap W) = 0.21 + 0.28 - 0.15 = 0.34$
 
 **b.  a wife will vote, given that her husband will vote?**
 
+- $P(W|H) = \frac{P(H \cap W)}{P(H)} = \frac{0.15}{0.21} = 0.714$
+
 **c.  a husband will vote, given that his wife will not vote?**
+
+- $P(H|W') = \frac{P(H \cap W')}{P(W')} = \frac{P(H/(H \cap W))}{P(W')} = \frac{P(H) - P(H \cap W)}{P(W')} = \frac{0.21 - 0.15}{0.72} = 0.083$
 
 ## 2.95
 
 **in a certain region of the country it is known from past experience that the probability of selecting an adult over 40 years of age with cancer is 0.05.  if the probability of a doctor correctly diagnosing a person with cancer as having the disease is 0.78 and the probability of incorrectly diagnosing a person without cancer as having the disease is 0.06, what is the probability that an adult over 40 years of age is diagnosed as having cancer?**
+
+- $P(C) = 0.05$
+
+- $P(C') = 1 - P(C) = 1 - 0.05 = 0.95$
+
+- $P(D | C) = 0.78$
+
+- $P(D | C') = 0.06$
+
+$$
+P(D) = P(D | C)(P(C)) + P(D|C')(P(C')) = (0.78)(0.05) + (0.06)(0.95) = 0.096
+$$
 
 ## 2.100
 
@@ -235,3 +241,7 @@ therefore, the probability that the first departmental inspection is passed and 
 | caused by other human errors | 7 | 7 | 5 |
 
 **suppose that a malfunction was reported and it was found to be caused by other human errors.  what is the probability that it came from station C?**
+
+- $P(E)$ be the probability that a malfunction by other human errors
+
+$$P(C | E) = \frac{P(E|C)(P(C))}{P(E|A)P(A) + P(E|B)P(B) + P(E|C)P(C)} = \frac{(5/10)(10/43)}{(7/18)(18/43)+(7/15)(15/43)+(5/10)(10/43)}= \frac{0.1163}{0.4419} = 0.2631876711$$
