@@ -115,13 +115,46 @@ $$
 
 **continuous sample space** if a sample space contains an infinite number of possibilities equal to the number of points on a line segment.
 
+definition 3.4 probability mass function
+example 3.6
+example 3.8
+example 3.9
+definition 3.5
+example 3.10
+figure probability mass function plot](#probability-mass-function-plot)
+figure probability histogram](#probability-histogram)
+figure discrete cumulative distribution function](#discrete-cumulative-distribution-function)
 
-    definition 3.4 probability mass function
-    example 3.6
-    example 3.8
-    example 3.9
-    definition 3.5
-    example 3.10
-    figure probability mass function plot](#probability-mass-function-plot)
-    figure probability histogram](#probability-histogram)
-    figure discrete cumulative distribution function](#discrete-cumulative-distribution-function)
+
+
+For a probability distribution, the sum of all probabilities must be equal to 1. That is,
+
+$$\sum_{x} f(x) = 1$$
+
+Using the given function, we have:
+
+$$\sum_{x=0}^2 f(x) = f(0) + f(1) + f(2)$$
+
+Substituting the given expression for $f(x)$ and simplifying, we get:
+
+$$
+\begin{align*}
+f(0) + f(1) + f(2) &= c\binom{2}{0}\binom{3}{3-0} + c\binom{2}{1}\binom{3}{3-1} + c\binom{2}{2}\binom{3}{3-2} \
+&= c(1)(1) + c(2)(3) + c(1)(3) \
+&= 5c
+\end{align*}
+$$
+
+For this to be equal to 1, we must have:
+
+$$5c = 1 \implies c = \frac{1}{5}$$
+
+Therefore, the value of $c$ that makes $f(x)$ a probability distribution is $c = \frac{1}{5}$.
+
+
+
+
+
+$$
+f(x) = c\binom{2}{x}\binom{3}{3-x}, \text{ for } x = 0, 1, 2
+$$
