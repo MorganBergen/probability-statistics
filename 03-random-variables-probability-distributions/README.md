@@ -28,7 +28,7 @@
 ## concept of a random variable
 
 - it is often important to allocate a numerical description to the outcome of a statistical experiment
-- for a given sample space $S$ of some experiment, a random variable (rv) is any rule that associates a number with each outcome in $S$.
+- for a given sample space $S$ of some experiment, a random variable (rv) is any rule that associates a number with each outcome in $S$
 
 ### definition 3.1
 
@@ -101,7 +101,11 @@ $$
 
 - **discrete random variable** is a random variable whose sample space is discrete, if a random variable takes on only a countable number of distinct values
     - if the set of possible outcomes is countable
-    - often this repressents count data, such as the number of defectives, highway fatalities, etc.
+    - often this represents count data, such as the number of defectives, highway fatalities, etc.
+-  a discrete random varibale assumes each of its values with a certain probability
+-  frequently, it is convenient to represent all the probabilities of a random variable $X$ by a formula
+
+$$f(x) = P(X = x), f(3) = P(X = 3)$$
 
 ### continuous random variable
 
@@ -114,19 +118,100 @@ $$
 
 ### definition 3.3 continuous sample space
 
-**continuous sample space** if a sample space contains an infinite number of possibilities equal to the number of points on a line segment.
+**continuous sample space** if a sample space contains an _infinite_ number of possibilities equal to the number of points on a line segment.
 
 ### definition 3.4 probability mass function
 
+**probability mass function** is the set of ordered pars $(x, f(x))$ is a probability function, probability mass function, or probability distribution of the discrete random variable $X$ if for each possible outcome $x$.
+
+1.  $f(x) \geq 0$
+
+2.  $\sum f(x) = 1$
+
+3.  $P(X = x) = f(x)$
+
+the probability distribution of a discrete random variable can be presented in the form of a mathematical formula, a table, or a graph-probability histogram, or barchart.
+
 ### example 3.6
+
+let $X$ be the random variable:  number of heads in 3 tosses of a fair coin.
+
+| sample space | x |
+|:------------:|:-:|
+| TTT          | 0 |
+| TTH          | 1 |
+| THT          | 1 |
+| THH          | 2 |
+| HTT          | 1 |
+| HTH          | 2 |
+| HHT          | 2 |
+| HHH          | 3 |
+
+the probability $P(X = x)$ that the outcome is a specific $x$ value is the probability that the number of heads is $x$.
+
+| x | 0 | 1 | 2 | 3 |
+|:-:|:-:|:-:|:-:|:-:|
+| **$P(X = x)$** | 1/8 | 3/8 | 3/8 | 1/8 |
 
 ### example 3.8
 
+-  a shipment of 8 similar microcomputers to a retail outlet contains 3 that are defective.  
+-  if a school makes a random purchase of 2 of these computers
+-  find the probability distribution for the number of defectives in the shipment
+
+$$
+f(0) = P(X = 0) = \frac{\binom{3}{0}\binom{5}{2}}{\binom{8}{2}} = \frac{10}{28} = 0.357 \\
+$$
+$$
+f(1) = P(X = 1) = \frac{\binom{3}{1}\binom{5}{1}}{\binom{8}{2}} = \frac{15}{28} = 0.536 \\
+$$
+$$
+f(2) = P(X = 2) = \frac{\binom{3}{2}\binom{5}{0}}{\binom{8}{2}} = \frac{3}{28} = 0.107 \\
+$$
+
+| x | 0 | 1 | 2 |
+|:-:|:-:|:-:|:-:|
+|**$f(x)$** | 10/28 | 15/28 | 3/28 |
+
 ### example 3.9
+
+if a car agency sells 50% of its inventory of a certain foreign car equipped with side airbags, find the probability distribution of the number of cars with side airbags, find the probability distribution of the number of cars with side airbags, find the probability distribution of the number of cars with side airbags among the next 4 cars sold by the agency.
+
+**solution** since the probability of selling an automobile with side airbags is 0.5, the $2^4 = 16$ points in the sample space are equally likely to occur.  therefore, the denominator is for all probabilities and also for our function it is 16.  in general, the event of selling x models with side airbags and $4 - x$ models without side airbags can occur in $\binom{4}{x}$ ways, where $x$ can be $0, 1, 2, 3,$ or $4$.  thus the probabability distribution $f(x) = P(X = x)$ is
+
+$f(x) = \frac{1}{16}\binom{4}{x}$ for $x = 0, 1, 2, 3, 4$
+
+$f(0) = \frac{\binom{4}{x}}{16} = \frac{1}{16}$
+
+$f(1) = \frac{\binom{4}{x}}{16} = \frac{4}{16} = \frac{1}{4}$
+
+$f(2) = \frac{\binom{4}{x}}{16} = \frac{6}{16} = \frac{3}{8}$
+
+$f(3) = \frac{\binom{4}{x}}{16} = \frac{4}{16} = \frac{1}{4}$
+
+$f(4) = \frac{\binom{4}{x}}{16} = \frac{1}{16}$
+
+so the probability distribution is,
+
+| x | 0 | 1 | 2 | 3 | 4 |
+|:-:|:-:|:-:|:-:|:-:|:-:|
+|**$f(x)$** | 1/16 | 1/4 | 3/8 | 1/4 | 1/16 |
 
 ### definition 3.5
 
+**the cumulative distribution function** $F(x)$ of a discrete random variable $X$ with probability distribution $f(x)$ is
+
+$$F(x) = P(X \leq x) = \sum_{t \leq x} f(t), \text{  for} -\infty \leq x \leq \infty$$
+
 ### example 3.10
+
+find the cumulative distribution of the random variable $X$ in example 3.9 where $X$ is the number of cars with side airbags sold by the agency.
+
+$$f(x) = \frac{1}{16}\binom{4}{x} , \text{  for  } x = 0, 1, 2, 3, 4$$ 
+
+$f(0) = \frac{1}{16}$, $f(1) = \frac{1}{4}$, $f(2) = \frac{3}{8}$, $f(3) = \frac{1}{4}$, $f(4) = \frac{1}{16}$
+
+$$F(0) = f(0) = \frac{1}{16}$$
 
 ### figure probability mass function plot
 
