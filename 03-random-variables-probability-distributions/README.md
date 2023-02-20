@@ -23,6 +23,7 @@
     - [figure discrete cumulative distribution function](#discrete-cumulative-distribution-function)
 3.  [continuous probability distributions](#continuous-probability-distributions)
 4.  [joint probability distributions](#joint-probability-distributions)
+5.  [exercises](#exercises)
 
 ## concept of a random variable
 
@@ -115,46 +116,50 @@ $$
 
 **continuous sample space** if a sample space contains an infinite number of possibilities equal to the number of points on a line segment.
 
-definition 3.4 probability mass function
-example 3.6
-example 3.8
-example 3.9
-definition 3.5
-example 3.10
-figure probability mass function plot](#probability-mass-function-plot)
-figure probability histogram](#probability-histogram)
-figure discrete cumulative distribution function](#discrete-cumulative-distribution-function)
+### definition 3.4 probability mass function
 
+### example 3.6
 
+### example 3.8
 
-For a probability distribution, the sum of all probabilities must be equal to 1. That is,
+### example 3.9
 
-$$\sum_{x} f(x) = 1$$
+### definition 3.5
 
-Using the given function, we have:
+### example 3.10
 
-$$\sum_{x=0}^2 f(x) = f(0) + f(1) + f(2)$$
+### figure probability mass function plot
 
-Substituting the given expression for $f(x)$ and simplifying, we get:
+### figure probability histogram
+
+### figure discrete cumulative distribution function
+
+### continuous probability distributions
+
+### joint probability distributions
+
+## exercises
+
+**3.5, 3.7 3.13, 3.14, 3.17, 3.33, 3.36, 3.38, 3.41, 3.43, 3.45, 3.47, 3.56**
+
+3.5.  determine the value of c so that each of the following functions can serve as a probability distribution of the discrete random variable x.
+
+a.  $f(x) = x(x^{2} + 4)$, for $x = 0, 1, 2, 3$
+
+b.  $f(x) = c\binom{2}{x}\binom{3}{3-x}$, for $x = 0, 1, 2$
+
+knowing that the summation of a pdf is 1 always we we get the following template
 
 $$
-\begin{align*}
-f(0) + f(1) + f(2) &= c\binom{2}{0}\binom{3}{3-0} + c\binom{2}{1}\binom{3}{3-1} + c\binom{2}{2}\binom{3}{3-2} \
-&= c(1)(1) + c(2)(3) + c(1)(3) \
-&= 5c
-\end{align*}
+1 = \sum_{x} f(x)
 $$
 
-For this to be equal to 1, we must have:
+, and substituting the given expression for $f(x)$ and simplifying, we get:
+
+$$
+1 = \sum_{x=0}^2 f(x) = f(0) + f(1) + f(2) = c\binom{2}{0}\binom{3}{3-0} + c\binom{2}{1}\binom{3}{3-1} + c\binom{2}{2}\binom{3}{3-2} = c(1)(1) + c(2)(3) + c(1)(3) = 5c
+$$
 
 $$5c = 1 \implies c = \frac{1}{5}$$
 
 Therefore, the value of $c$ that makes $f(x)$ a probability distribution is $c = \frac{1}{5}$.
-
-
-
-
-
-$$
-f(x) = c\binom{2}{x}\binom{3}{3-x}, \text{ for } x = 0, 1, 2
-$$
