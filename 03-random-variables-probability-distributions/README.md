@@ -215,6 +215,7 @@ $$F(0) = f(0) = \frac{1}{16}$$
 
 ### figure probability mass function plot
 
+
 ### figure probability histogram
 
 ### figure discrete cumulative distribution function
@@ -247,4 +248,14 @@ $$
 
 $$5c = 1 \implies c = \frac{1}{5}$$
 
-Therefore, the value of $c$ that makes $f(x)$ a probability distribution is $c = \frac{1}{5}$.
+therefore, the value of $c$ that makes $f(x)$ a probability distribution is $c = \frac{1}{5}$.
+
+3.7.  the total number of hours, measured in units of 100 hours, that a family runs a vacuum cleaner over a period of one year is a continuous random variable $X$ that has a probability density function.  
+
+$$f(x) = 
+\begin{cases}
+x, 0 \eq x \eq 1, \\
+2 - x, 1 \leq x \eq 2, \\
+0, \text{otherwise} \\
+\end{cases}
+$$
