@@ -22,8 +22,9 @@
     - [figure probability histogram](#probability-histogram)
     - [figure discrete cumulative distribution function](#discrete-cumulative-distribution-function)
 3.  [continuous probability distributions](#continuous-probability-distributions)
-4.  [joint probability distributions](#joint-probability-distributions)
-5.  [exercises](#exercises)
+4.  [probability density function](#probability-density-function)
+5.  [joint probability distributions](#joint-probability-distributions)
+6.  [exercises](#exercises)
 
 ## concept of a random variable
 
@@ -207,22 +208,102 @@ $$F(x) = P(X \leq x) = \sum_{t \leq x} f(t), \text{  for} -\infty \leq x \leq \i
 
 find the cumulative distribution of the random variable $X$ in example 3.9 where $X$ is the number of cars with side airbags sold by the agency.
 
-$$f(x) = \frac{1}{16}\binom{4}{x} , \text{  for  } x = 0, 1, 2, 3, 4$$ 
+**example 3.9** probability distribution
 
-$f(0) = \frac{1}{16}$, $f(1) = \frac{1}{4}$, $f(2) = \frac{3}{8}$, $f(3) = \frac{1}{4}$, $f(4) = \frac{1}{16}$
+| x | 0 | 1 | 2 | 3 | 4 |
+|:-:|:-:|:-:|:-:|:-:|:-:|
+|**$f(x)$** | 1/16 | 1/4 | 3/8 | 1/4 | 1/16 |
 
-$$F(0) = f(0) = \frac{1}{16}$$
+**probability distribution $f(x) = P(X = x)$**
+
+$f(x) = \frac{1}{16}\binom{4}{x} , \text{  for  } x = 0, 1, 2, 3, 4 \\$
+
+**discrete probability distribution**
+
+-  $f(0) = \frac{1}{16}$
+
+-  $f(1) = \frac{1}{4}$
+
+-  $f(2) = \frac{3}{8}$
+
+-  $f(3) = \frac{1}{4}$
+
+-  $f(4) = \frac{1}{16}$
+
+**cumulative distribution**
+
+-  $F(0) = f(0) = \frac{1}{16}$
+
+-  $F(1) = f(0) + f(1) = \frac{1}{16} + \frac{1}{4} = \frac{5}{16}$
+
+-  $F(2) = f(0) + f(1) + f(2) = \frac{1}{16} + \frac{1}{4} + \frac{3}{8} = \frac{11}{16}$
+
+-  $F(3) = f(0) + f(1) + f(2) + f(3) = \frac{1}{16} + \frac{1}{4} + \frac{3}{8} + \frac{1}{4} = \frac{15}{16}$
+
+-  $F(4) = f(0) + f(1) + f(2) + f(3) + f(4) = \frac{1}{16} + \frac{1}{4} + \frac{3}{8} + \frac{1}{4} + \frac{1}{16} = 1$
+
+**cumulative distribution $F(x) = P(X \leq x)$**
+
+$$
+F(x) = 
+\begin{cases}
+0, & \text{for  } x < 0 \\
+1/16, & \text{for  } 0 \leq x < 1 \\
+5/16, & \text{for  } 1 \leq x < 2 \\
+11/16, & \text{for } 2 \leq x < 3 \\
+15/16, & \text{for } 3 \leq x < 4 \\
+1, & \text{for  } x \geq 4
+\end{cases}
+$$
+
+now $f(3) = F(3) - F(2) = \frac{15}{16} - \frac{11}{16} = \frac{1}{4}$
 
 ### figure probability mass function plot
 
+<img src="./pmf-plot.png" width="200"/>
 
 ### figure probability histogram
 
+<img src="./ph-graph.png" width="200"/>
+
 ### figure discrete cumulative distribution function
+
+<img src="./dcd-func.png" width="200"/>
 
 ### continuous probability distributions
 
+-  a continuous random variable has a probability of zero assuming exactly any of its values $P(a < X \leq b) = P(a < X < b) = P(a \leq X < b) = P(a \leq X \leq b)$
+
+-  that is, it doesnt matter whether we include an exnd point of the interval or not, this is not true, though when $X$ is discrete.  although the probability distribution of a continuous random variable cannot be presented in tabular form, it can be stated as a formula.  such formula would be necessarily be a function of the numerical values of the continuous random variable $X$ and as such will be represented by the functional notation $f(x)$.  in dealing with continuous varibales $f(x)$ is usually called the **probability density function**, or simply the **desnity function** of $X$.
+
+since $X$ is defined over a continuous sample space, it is possible for $f(x)$ to have a finite number of discontinuities.  however, most density functions have practical applications in the analysis of statsitical data are continuous and their graphs may take any several forms, some of which are shown below.
+
+**example**  the height of a random person $P(X = 178\text{cm}) = 0$ with no assuming exactly
+
+-  with continuous random variables we talk about the probability of x being in some interval, like $P(x < X < b)$
+
+<img src="./density-func.png" width="500"/>
+
+-  because areas will not be used to represent probabilities and probabilities are positive numerical values, the density function must lie entirely above the $x$ axis. 
+
+### probability density function
+
+a probability density function is constructed so that the area under its curve bounded by the $x$ acis is equal to $1$ when computed over the range of $X$ for which $f(x)$ is defined.  should this range of $X$ be a finite interval, it is always possible to extend the interval to include the entire set of real numbers by defining $f(x)$ to be zero at all points in the extended portions of the interval.  in the following figure below the probability that $X$ assumes a value between $a$ and $b$ is equal to the shaded area under the density function between th eordinates at $x = a$ and $x = b$, and from integral calculus is given by,
+
+$$P(a < X < b) = \int_{a}^{b} f(x) dx$$ 
+
+<img src="./pdf.png" width="500"/>
+
+the function $f(x)$ is a **probability density function** (pdf) for the continuous random variable $X$, defined over the set of real numbers, if 
+
+1.  $f(x) \geq 0$ for all $x \in R$
+2.  $\int_{-\infty}^{\infty} f(x) dx = 1$
+3.  $P(a < X < b) = \int_{a}^{b} f(x) dx$
+
+
 ### joint probability distributions
+
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 
 ## exercises
 
