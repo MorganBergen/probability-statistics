@@ -254,8 +254,5 @@ therefore, the value of $c$ that makes $f(x)$ a probability distribution is $c =
 
 $$f(x) = 
 \begin{cases}
-x, 0 \eq x \eq 1, \\
-2 - x, 1 \leq x \eq 2, \\
-0, \text{otherwise} \\
 \end{cases}
 $$
