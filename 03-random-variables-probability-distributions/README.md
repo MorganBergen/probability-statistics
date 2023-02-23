@@ -24,7 +24,8 @@
 3.  [continuous probability distributions](#continuous-probability-distributions)
 4.  [probability density function](#probability-density-function)
 5.  [joint probability distributions](#joint-probability-distributions)
-6.  [exercises](#exercises)
+6.  [definition of joint probability distribution / probability mass function](#definition-of-joint-probability-distribution--probability-mass-function)
+-  [exercises](#exercises)
 
 ## concept of a random variable
 
@@ -300,11 +301,125 @@ the function $f(x)$ is a **probability density function** (pdf) for the continuo
 2.  $\int_{-\infty}^{\infty} f(x) dx = 1$
 3.  $P(a < X < b) = \int_{a}^{b} f(x) dx$
 
-
 ### joint probability distributions
 
+our study of random variables and their probability distributions in the preceding sections is restricted to one-dimensional sample spaces, in tha we recorded outcomes of an experiment as values assumed by a single random variable.  there will be situations, however, where we may find it desirable to record the simultaneous outcomes of several random variables.  for example we might measure the amount of precipitate $P$ and volume $V$ of gas released from a controlled chemical experiment, giving rise to a two-dimensional sample space consisting of the outcomes $(p, v)$, or we might be interested in the hardness $H$ and tensile strength $T$ of cold-drawn copper, resulting in the outcomes $(h, t)$.  in a study to determine the likelihood of success in college based on high school data, we might use the three-dimensional sample space and record for each individual his or her aptitude test score, high school class rank, and grade-point average at the end of freshman year in college.
+
+if $X$ and $Y$ are two discrete random variables, the probability distribution for their simultaneous occurrence can be represented by the function with values $f(x, y)$ for any pair of values $(x, y)$ within the range of the random variables $X$ and $Y$.  it is customary to refer to this function as the **joint probability distribution** of $X$ and $Y$.  hence, in the discrete case...
+
+
+$$f(x, y) = P(X = x, Y = y)$$
+
+that is, the values $f(x, y)$ give the probability that outcomes $x$ and $y$ occur at the same time.
+
+**example**
+
+if an $18$-wheeler is to have its tired serviced and $X$ represents the number of miles these tires have been driven and $Y$ represents the number of tires that need to be replaced, then $f(30000, 5)$, is the probability that the tires are used over $30,000$ miles and the truck needs $5$ new tires.
+
+### definition of joint probability distribution / probability mass function
+
+$$f(x, y) = P(X = x, Y = y)$$
+
+the function $f(x, y)$ is a joint probability distribution or **probability mass function** of the discrete random variables $X$ and $Y$ if
+
+1.  $f(x, y) \geq 0$ for all $(x, y)$
+
+2.  $\sum_{x} \sum_{y} f(x, y) = 1$
+
+3.  $P(X = x, Y = y) = f(x, y)$
+
+for any region $A$ in the $xy$ plane, $P[(X, Y) \in A] = \sum_{}\sum_{A} f(x,y)$
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 <br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+----------------------------------------
 ## exercises
 
 **3.5, 3.7 3.13, 3.14, 3.17, 3.33, 3.36, 3.38, 3.41, 3.43, 3.45, 3.47, 3.56**
@@ -337,3 +452,64 @@ $$f(x) =
 \begin{cases}
 \end{cases}
 $$
+
+
+
+
+
+--------------------------------------------------------------------------------------
+
+
+3.36  On a laboratory assignment, if the equipment is working, the density function of the observed outcome, X, is
+
+$$f(x) = 
+\begin{cases}
+2(1 - x), & 0 < x < 1 \\
+0, & \text{otherwise} \\
+\end{cases}
+$$
+
+a.  calculate $P(X \leq \frac{1}{3})$
+
+$$P(X\leq 1/3) = \int_{0}^{1/3} 2(1-x) dx = [2x-x^{2}] = \frac{2}{9}$$
+
+b.  calculate $P(X > \frac{1}{2})$
+
+$$P(X > 0.5) = \int_{0.5}^1 2(1-x) dx = 2x-x^2 = 0.25.$$
+
+
+
+
+**3.38**  if the joint probability distribution of X and Y is given by f(x, y) = (x + y)/30, for x = 0, 1, 2, 3; y = 0, 1, 2, find P(X ≤ 2, Y = 1)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
