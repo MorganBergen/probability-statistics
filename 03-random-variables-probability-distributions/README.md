@@ -477,9 +477,6 @@ b.  calculate $P(X > \frac{1}{2})$
 
 $$P(X > 0.5) = \int_{0.5}^1 2(1-x) dx = 2x-x^2 = 0.25.$$
 
-
-
-
 **3.38**  if the joint probability distribution of X and Y is given by f(x, y) = (x + y)/30, for x = 0, 1, 2, 3; y = 0, 1, 2, find P(X ≤ 2, Y = 1)
 
 
