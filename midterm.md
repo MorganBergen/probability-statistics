@@ -4,11 +4,11 @@
 
 1.  sample mean:  
 
-$$\bar{x} = \frac{\sum_{i=1}^{n} x_{i}}{n} = \frac{x_{1} + x_{2} + \cdots + x_{n}}{n}$$
+$$\bar{x} = \sum_{i=1}^{n}\frac{x_{i}}{n} = \frac{x_{1} + x_{2} + \cdots + x_{n}}{n}$$
 
-2.  sample median if $n$ is even:  $ \tilde{x} = \frac{x_{\frac{n+1}{2}} + x_{\frac{n+2}{2}}}{2} $
+2.  sample median if $n$ is even:  $\tilde{x} = \frac{x_{\frac{n+1}{2}} + x_{\frac{n+2}{2}}}{2}$
 
-3.  sample median if $n$ is odd $ \tilde{x} = x_{\frac{n+1}{2}} $
+3.  sample median if $n$ is odd $\tilde{x} = x_{\frac{n+1}{2}}$
 
 4.  sample variance: $X_{1}, X_{2}, \cdots, X_{n}$ is denoted by $\sigma^{2}$
 
