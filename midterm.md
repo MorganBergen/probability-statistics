@@ -178,14 +178,10 @@ $$\mu_{g(X, Y)} = E[g(X, Y)] = \int_{-∞}^{∞}\int_{-∞}^{∞} g(x, y) f(x, y
 1.3.  **standard deviation**  let $X$ be a random variable with probability distribution $f(x)$ and mean $\mu$.  the variance of $X$ is $\sigma^{2}$.  the variance $\sigma^{2}$ is called the standard deviation.
 
 if $X$ is discrete
-$$
-\sigma^{2} = E[(X - \mu)^{2}] = \sum_{x} (x - \mu)^{2} f(x)dx
-$$
+$$\sigma^{2} = E[(X - \mu)^{2}] = \sum_{x} (x - \mu)^{2} f(x)dx$$
 
 if $X$ is continuous
-$$
-\sigma^{2} = E[(X - \mu)^{2}] = \int_{-∞}^{∞} (x - \mu)^{2} f(x) ds
-$$
+$$\sigma^{2} = E[(X - \mu)^{2}] = \int_{-∞}^{∞} (x - \mu)^{2} f(x) ds$$
 
 1.4.  the variance of the random variable $X$ is $\sigma^{2} = E(X^{2}) - \mu^{2}$
 
