@@ -62,9 +62,7 @@ $$
 
 12.  bayes' theorem
 
-$$
-P(B_{r} | A) = \frac{P(B_{r} \cap A)}{\sum_{i = 1}^{k}P(B_{i} \cap A)} = \frac{P(B_{r} \cap A)}{\sum_{i = 1}^{k} P(B_{i} | A) P(B_{i})}
-$$
+$$P(B_{r} | A) = \frac{P(B_{r} \cap A)}{{\sum_{i = 1}^{k}} {P(B_{i} \cap A)}} = \frac{P(B_{r} \cap A)}{{\sum_{i = 1}^{k}}{P(B_{i} | A) P(B_{i})}}$$
 
 $$ P[B|A] = \frac{P[A|B] P[B]}{P[A]} $$
 
