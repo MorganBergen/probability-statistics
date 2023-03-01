@@ -187,7 +187,6 @@ $\binom{n}{r} = \frac{n!}{r!(n-r)!}$
 **summary**
 
 **permutation** - order matters the number of permutations of $n$ objects is
-
 $$ 
 n! = n \times (n-1) \times (n-2) \times \dots \times 2 \times 1
 $$
