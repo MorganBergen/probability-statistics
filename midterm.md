@@ -32,7 +32,7 @@ $$\sigma^{2} = s^{2} = \frac{1}{n - 1} \sum_{i=1}^{n} (x_{i} - \bar{x})^{2}$$
 3.  if $A = A_{1} \cup A_{2} \cup \cdots \cup A_{m} \text{ and }  A_{i} \cap A_{j} = \emptyset \text { for all } i \neq j \text{ , then }$ $ P[A] = \sum_{i=1}^m P[A_{i}] $
 4.  $P[.]$, $P[\emptyset] = 0$, $P[A^c] = 1 - P[A]$, $P[A \cup B] = P[A] + P[B] - P[A \cap B]$, and $A \subset B, P[A] \leq P[B]$
 
-5.  $B = {s_{1}, s_{2}, \cdots, s_{m}}$ is the sum of the probabilities of the outcomes contained in the event:  $$ P[B] = \sum_{i=1}^m P[{s_{i}}] $$
+5.  $B = {s_{1}, s_{2}, \cdots, s_{m}}$ is the sum of the probabilities of the outcomes contained in the event:  $$P[B] = \sum_{i=1}^m P[{s_{i}}]$$
 
 6.  $S = {s_{1}, s_{2}, \cdots, s_{n}}$ in which each outcomes $s_{i}$ is equally likely, 
 
