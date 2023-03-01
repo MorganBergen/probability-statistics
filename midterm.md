@@ -173,7 +173,7 @@ $$\mu_{g(X, Y)} = E[g(X, Y)] = \sum_{x} \sum_{y} g(x, y) f(x, y)$$
 
 if $X$ and $Y$ are continuous
 
-$$\mu_{g(X, Y)} = E[g(X, Y)] = \int_{-\infin}^{\infin}\int_{-\infin}^{\infin} g(x, y) f(x, y) dx dy$$
+$$\mu_{g(X, Y)} = E[g(X, Y)] = \int_{-∞}^{∞}\int_{-∞}^{∞} g(x, y) f(x, y) dx dy$$
 
 1.3.  **standard deviation**  let $X$ be a random variable with probability distribution $f(x)$ and mean $\mu$.  the variance of $X$ is $\sigma^{2}$.  the variance $\sigma^{2}$ is called the standard deviation.
 
@@ -184,7 +184,7 @@ $$
 
 if $X$ is continuous
 $$
-\sigma^{2} = E[(X - \mu)^{2}] = \int_{-\infin}^{\infin} (x - \mu)^{2} f(x) ds
+\sigma^{2} = E[(X - \mu)^{2}] = \int_{-∞}^{∞} (x - \mu)^{2} f(x) ds
 $$
 
 1.4.  the variance of the random variable $X$ is $\sigma^{2} = E(X^{2}) - \mu^{2}$
@@ -197,7 +197,7 @@ $$\sigma_{g(X)}^{2} = E\{[g(X) - \mu_{g(X)}^{2}\} = \sum_{x} [g(x) - \mu_{g(X)}]
 
 if $X$ is continuous
 
-$$\sigma_{g(X)}^{2} = E\{[g(X) - \mu_{g(X)}]^{2}\} = \int_{-\infin}^{\infin} [g(x) - \mu_{g(X)}]^{2}f(x) dx$$
+$$\sigma_{g(X)}^{2} = E\{[g(X) - \mu_{g(X)}]^{2}\} = \int_{-∞}^{∞} [g(x) - \mu_{g(X)}]^{2}f(x) dx$$
 
 1.6.  **covariance** let $X$ and $Y$ be random variables with joint probability distribution $f(x, y)$ the covariance of $X$ and $Y$ is 
 if $X$ and $Y$ are discrete
@@ -206,7 +206,7 @@ $$ \sigma_{XY} = E[(X - \mu_{X})(Y - \mu_{Y})] = \sum_{x} \ sum_{y} (x - \mu_{X}
 
 if $X$ and $Y$ are continuous 
 
-$$ \sigma_{XY} = E[(X - \mu_{X})(Y - \mu_{Y})] =  \int_{-\infin}^{\infin}\int_{-\infin}^{\infin}(x - \mu_{X})(y - \mu_{y}) f(x, y) dx dy$$
+$$ \sigma_{XY} = E[(X - \mu_{X})(Y - \mu_{Y})] =  \int_{-∞}^{∞}\int_{-∞}^{∞}(x - \mu_{X})(y - \mu_{y}) f(x, y) dx dy$$
 
 1.5. **covariance** the covariance of two random variables $X$ and $Y$ with means/expected valyes of $\mu_{X}$ and $\mu_{Y}$ is $\sigma_{XY} = E(XY) - \mu_{X}\mu_{Y}$
 
