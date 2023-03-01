@@ -2,7 +2,9 @@
 
 ## statistics
 
-1.  sample mean:  $\bar{x} = \frac{\sum_{i=1}^{n} x_{i}}{n} = \frac{x_{1} + x_{2} + \cdots + x_{n}}{n}$
+1.  sample mean:  
+
+$$\bar{x} = \frac{\sum_{i=1}^{n} x_{i}}{n} = \frac{x_{1} + x_{2} + \cdots + x_{n}}{n}$$
 
 2.  sample median if $n$ is even:  $ \tilde{x} = \frac{x_{\frac{n+1}{2}} + x_{\frac{n+2}{2}}}{2} $
 
