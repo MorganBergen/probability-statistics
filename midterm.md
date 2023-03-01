@@ -131,7 +131,7 @@ $$\mu = E(X) = \sum_{x}{x f(x)}dx$$
 
 if $X$ is continuous
 
-$$\mu = E(X) = \int_{-\infin}^{\infin}{xf(x)}dx$$ 
+$$\mu = E(X) = \int_{-∞}^{∞}{xf(x)}dx$$ 
 
 4.1.  **example** a lot containing 7 components is sampled by a quality inspector; the lot contains 4 good components and 3 defective components. a sample of 3 is taken by the inspector. find the expected value of the number of good components in this sample.
 
