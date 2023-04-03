@@ -11,15 +11,15 @@
 7.  [6.34](#632)
 8.  [6.55](#655)
 9.  [6.66](#666)
-10. [6.17](#617)
-11. [6.20](#620)
-12. [8.27](#827)
-13. [8.30](#830)
-14. [central limit theorem and its conditions](#central-limit-theorem-and-its-conditions)
+10. [8.27](#827)
+11. [8.30](#830)
+12. [central limit theorem and its conditions](#central-limit-theorem-and-its-conditions)
 
 ###  examples
 
-1.  [5.3](#53-example)
+1.  [5.3 example](#53-example)
+2.  [6.17 example](#617-example)
+3.  [6.20 example](#620-example)
 
 ### 5.25
 
@@ -83,6 +83,42 @@ c.  exactly 30 times?
 
 ###  6.55
 
+computer response time is an important application of the gamma and exponential distributions.  suppose that a study of a certain computer system reveals that the response time, in seconds, has an exponential distribution with mean of 3 seconds.
+
+a.  what is the probability that response time exceeds 5 seconds?
+
+b.  what is the probability that response time exceeds 10 seconds?
+
+###  6.66
+
+a certain type of device has an advertised failure rate of 0.01 per hour.  the failure rate is constant and the exponential distribution applies.
+
+a.  what is the mean time of failure?
+
+b.  what is the probability that 200 hours will pass before a failure is observed?
+
+
+###  6.17 example
+
+**question**
+
+suppose that a system contains a certain type of component whose time, in years, to failure is given by $T$.  the raindom variable $T$ is modeled nicely by the exponential distribution with mean time to failure $\beta = 5$.  if 5 of these components are installed in different systems, what is the probability that at least 2 are still functioning at the end of 8 years?
+
+**solution**
+
+the probability that a given component is still functioning after 8 years is given by
+
+$$
+P(T > 8) = \frac{1}{5}\int_{8}^{\infin} e^{-t/5} dt = e^{-8/5} \approx 0.2
+$$
+
+let X represent the number of components functioning after 8 years.  then using the binomial distribution, we have
+
+$$
+P(X \geq 2) = \sum_{x = 2}^{5} b(x; 5, 0.2) = 1 - \sum_{x = 0}^{1} b(x; 5, 0.2) = 1 - 0.7373 = 0.2627
+$$
+
+###  6.20 example
 
 
 
@@ -100,23 +136,11 @@ c.  exactly 30 times?
 
 
 
- <br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 
 ###  5.3 example
 
