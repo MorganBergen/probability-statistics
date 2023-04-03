@@ -15,12 +15,73 @@
 11. [6.20](#620)
 12. [8.27](#827)
 13. [8.30](#830)
+14. [central limit theorem and its conditions](#central-limit-theorem-and-its-conditions)
+
+###  examples
+
+1.  [5.3](#53-example)
 
 ### 5.25
 
 suppose that for a very large shipment of integrated-circuit chips, the probability of failure for any one chip 0.10.  assuming that the assumptions underlying the binomial distributions are met, find the probability that at most 3 chips fail in a random sample of 20.
 
-###  
+###  5.27
+
+if the probability that a fluorescent light has a useful life of at least 800 hours in 0.9, find the probabilities that among 20 such lights
+
+a.  exactly 18 will have a useful life of at least 800 hours
+
+b.  at least 15 will have a useful life of at least 800 hours
+
+c.  at least 2 will not have a useful life of at least 800 hours
+
+###  5.66
+
+changes in airport procedures require considerable planning.  arrival rates of aircraft are important factors that must be taken into account.  suppose small aircraft arrive at a certain airport, according to a poisson process, at the rate of 6 per hour.  thus the poisson parameter for arrivals over a period of hours is $\mu = 6t$ 
+
+a.  what is the probability that exavctly 4 small aircraft arrive during a 1-hour period?
+
+b.  what is the probability that at least 4 arrive during a 1-hour period?
+
+c.  if we define  aworking day as 12 hours, what is the probability that at least 75 small aircraft arrive during a working day?
+
+###  5.67
+
+the number of customers arriving per hour at a certain automobile service facility is assumed to follow a poisson distribution with mean $\lambda = 7$
+
+a.  compute the probability that more than 10 customers will arive in a 2-hour period
+
+b.  what is the mean number of arrivals during a 2-hour period?
+
+###  6.8
+
+given a normal distribution with $\mu = 30$ and $\sigma = 6$, find
+
+a.  the normal curve area to the right of $x = 17$
+
+b.  the normal curve area to the left of $x = 22$
+
+c.  the normal curve area between $x = 32$ and $x = 41$
+
+d.  the value of $x$ that has $80\%$ of the normal curve area to the left
+
+e.  the tow values of $x$ rthat conatin the middle $75\%$ of the normal curve area
+
+###  6.32
+
+a pharmaceutical company knows that approximately $5\%$ of its birth-control pulls have an ingredient that is below the minimum strength, thus rendering the pill ineffective.  what is the probability that fewer than 10 in a sample of 200 pills will be ineffective?
+
+###  6.34
+
+a pair of dice is rolled 180 times.  what is the probability that a total of 7 occurs
+
+a.  at least 25 times?
+
+b.  between 33 and 41 times inclusive?
+
+c.  exactly 30 times?
+
+###  6.55
 
 
 
@@ -39,12 +100,28 @@ suppose that for a very large shipment of integrated-circuit chips, the probabil
 
 
 
+ <br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 
 
 
 
 
-**example 5.3**  a large chain retailer purchases a certain kind of electronic device from a manufacturer.  the manufacturer indicates that defective rate of the device is 3%.
+
+
+
+
+
+
+
+
+
+
+
+
+###  5.3 example
+
+
+**example 5.3**  a large chain retailer purchases a certain kind of electronic device from a manufacturer.  the manufacturer indicates that defective rate of the device is $3\%$.
 
 a.  the inspector of the retailer randomly picks 20 items from a shipment.  what is the probability that there will be at least one defective item among these 20?
 
