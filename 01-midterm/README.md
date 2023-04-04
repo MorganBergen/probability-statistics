@@ -1,7 +1,6 @@
-# midterm 2
+# midterm 2 
 
 ###  contents
-
 1.  [5.25](#525)
 2.  [5.27](#527)
 3.  [5.66](#566)
@@ -23,11 +22,22 @@
 
 ### 5.25
 
-suppose that for a very large shipment of integrated-circuit chips, the probability of failure for any one chip 0.10.  assuming that the assumptions underlying the binomial distributions are met, find the probability that at most 3 chips fail in a random sample of 20.
+**question** suppose that for a very large shipment of integrated-circuit chips, the probability of failure for any one chip 0.10.  assuming that the assumptions underlying the binomial distributions are met, find the probability that at most 3 chips fail in a random sample of 20.
+
+**solution**  let random variable $X$ represent the number of chips failed among the 20 randomly selected chips.  we will consider failure of a chip as a success.  thus the probability of success is $p = 0.10$ and because the trails are independent, $X$ has a binomial distribution with parameters $n = 20$ and $p = 0.10$.  the probability mass function of $X$ is, $P(X = x) = b(x; 20, 0.10), \text{    } x = 0, 1, 2, \dots, 20$
+
+$$b(x; 20, 0.1)= \binom{20}{x} (0.10)^{x}(1 - 0.10)^{20 - x}$$
+
+$= \binom{6}{x} (0.10)^{x}(0.90)^{20 - x}, \text{   } x = 0, 1, 2, \dots, 20$
+
+now to find the probability that at most $3$ chips fail in a random sample of $20$
+
+$$P(X \leq 3) = \sum_{x = 0}^{3} b (x; 20, 0.10) = 0.8670$$
+
 
 ###  5.27
 
-if the probability that a fluorescent light has a useful life of at least 800 hours in 0.9, find the probabilities that among 20 such lights
+question** if the probability that a fluorescent light has a useful life of at least 800 hours in 0.9, find the probabilities that among 20 such lights
 
 a.  exactly 18 will have a useful life of at least 800 hours
 
@@ -98,44 +108,17 @@ a.  what is the mean time of failure?
 b.  what is the probability that 200 hours will pass before a failure is observed?
 
 
-###  6.17 example
+###  8.27
 
-**question**
+in a chemical process, the amount of a certain type of impurity in the output is difficult to control and is thus a random variable.  speculation is that the population mean amount of the impurity is $0.20$ gram per gram of output.  it is known that the standard deviation is $0.1$ gram per gram.  an experiment is conducted to gain more insight regarding the speculation that $\mu = 0.2$.  the process is run on a lab scale $50$ times and the sample average $\bar{x}$ turns out to be $0.23$ gram per gram.  comment on the speculation that the mean amount of impurity is $0.20$ gram per gram.  make use of the central limit theorem in your work.
 
-suppose that a system contains a certain type of component whose time, in years, to failure is given by $T$.  the raindom variable $T$ is modeled nicely by the exponential distribution with mean time to failure $\beta = 5$.  if 5 of these components are installed in different systems, what is the probability that at least 2 are still functioning at the end of 8 years?
+###  8.30
 
-**solution**
+the mean score for freshman on an aptitude test at a certain college is $540$ with a standard deviation of $50$.  assume the means to be measured to any degree of accuracy.  what is the probability that two groups selected at random, consisting of $32$ and $50$ students, respectively will differ in their mean scores by
 
-the probability that a given component is still functioning after 8 years is given by
+a.  more than 20 points
 
-$$
-P(T > 8) = \frac{1}{5}\int_{8}^{\infin} e^{-t/5} dt = e^{-8/5} \approx 0.2
-$$
-
-let X represent the number of components functioning after 8 years.  then using the binomial distribution, we have
-
-$$
-P(X \geq 2) = \sum_{x = 2}^{5} b(x; 5, 0.2) = 1 - \sum_{x = 0}^{1} b(x; 5, 0.2) = 1 - 0.7373 = 0.2627
-$$
-
-###  6.20 example
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+b.  an amount between $5$ and $10$ points?
 
 
 
@@ -159,4 +142,40 @@ denote by $Y$ the number of shipments containing at least one defective item $b(
 
 $$P(Y = 3) = {{10}\choose{3}} 0.4562^{3}(1 - 0.4562)^{10 - 3} = 0.1602$$
 
+###  6.17 example
 
+**question**
+
+suppose that a system contains a certain type of component whose time, in years, to failure is given by $T$.  the raindom variable $T$ is modeled nicely by the exponential distribution with mean time to failure $\beta = 5$.  if 5 of these components are installed in different systems, what is the probability that at least 2 are still functioning at the end of 8 years?
+
+**solution**
+
+the probability that a given component is still functioning after 8 years is given by
+
+$$
+P(T > 8) = \frac{1}{5}\int_{8}^{\infty} e^{-t/5} dt = e^{-8/5} \approx 0.2
+$$
+
+let X represent the number of components functioning after 8 years.  then using the binomial distribution, we have
+
+$$
+P(X \geq 2) = \sum_{x = 2}^{5} b(x; 5, 0.2) = 1 - \sum_{x = 0}^{1} b(x; 5, 0.2) = 1 - 0.7373 = 0.2627
+$$
+
+###  6.20 example
+
+**question** &nbsp; &nbsp; it is known from pervious data, that the length of time in months between customer complaints about a certain product is a gamma distribution with $\alpha = 2$ and $\beta = 4$.  changes were made to tighten quality control requirements.  following these changes, 20 months passed before the first complaint.  does it appear as if the quality control tightening was effective?
+
+**solution** &nbsp; &nbsp; let $X$ be the time to the first complaint, which, under conditions prior to the changes, followed a gamma distribution with $\alpha = 2$ and $\beta = 4$.  the question centers around how rare $X \geq 20$ is, given that $\alpha$ and $\beta$ remain at values $2$ and $4$, respectively.  in other words, under the prior conditions is a "time to complaint" as large as 20 months reasonable?  thus
+
+$$
+P(X \geq 20) = 1 - \frac{1}{\beta^{\alpha}} \int_{0}^{20} \frac{x^{\alpha - 1}e^{-x/\beta}}{\Gamma(\alpha)} 
+$$
+
+using $y = x/\beta$ we have
+
+$$
+P(X \geq  20) = 1 - \int_{0}^{5} \frac{ye^{-y}}{\Gamma(2)}dy = 1 - F(5; 2) = 1 - 0.96 = 0.04
+$$
+
+where $F(5; 2) = 0.96$ is found from table a.23.  as a result we could conclude that the conditions of the gamma distribution with $\alpha = 2$ and $\beta = 4$ are not supported by the data that an observed time to complaint is as large as $20$ months.  thus, it is reasonable to conclude that the quality control work was effective.
