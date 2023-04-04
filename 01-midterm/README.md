@@ -24,11 +24,11 @@
 
 **question** suppose that for a very large shipment of integrated-circuit chips, the probability of failure for any one chip 0.10.  assuming that the assumptions underlying the binomial distributions are met, find the probability that at most 3 chips fail in a random sample of 20.
 
-**solution**  let random variable $X$ represent the number of chips failed among the 20 randomly selected chips.  we will consider failure of a chip as a success.  thus the probability of success is $p = 0.10$ and because the trails are independent, $X$ has a binomial distribution with parameters $n = 20$ and $p = 0.10$.  the probability mass function of $X$ is, $P(X = x) = b(x; 20, 0.10), \text{    } x = 0, 1, 2, \dots, 20$
+**solution**  let random variable $X$ represent the number of chips failed among the 20 randomly selected chips.  we will consider failure of a chip as a success.  thus the probability of success is $p = 0.10$ and because the trails are independent, $X$ has a binomial distribution with parameters $n = 20$ and $p = 0.10$.  the probability mass function of $X$ is, 
 
-$$b(x; 20, 0.1)= \binom{20}{x} (0.10)^{x}(1 - 0.10)^{20 - x}$$
+$$P(X = x) = b(x; 20, 0.10), \text{    } x = 0, 1, 2, \dots, 20$$
 
-$= \binom{6}{x} (0.10)^{x}(0.90)^{20 - x}, \text{   } x = 0, 1, 2, \dots, 20$
+$$\binom{20}{x} (0.10)^{x}(1 - 0.10)^{20 - x}= \binom{6}{x} (0.10)^{x}(0.90)^{20 - x}, \text{   } x = 0, 1, 2, \dots, 20$$
 
 now to find the probability that at most $3$ chips fail in a random sample of $20$
 
@@ -37,23 +37,55 @@ $$P(X \leq 3) = \sum_{x = 0}^{3} b (x; 20, 0.10) = 0.8670$$
 
 ###  5.27
 
-question** if the probability that a fluorescent light has a useful life of at least 800 hours in 0.9, find the probabilities that among 20 such lights
+**question** if the probability that a fluorescent light has a useful life of at least 800 hours in 0.9, find the probabilities that among 20 such lights
+
+**solution**  let random variable $X$ represent the number of lights having a useful life of at least 800 hours among 20 lights.  lets consider it success if a light has a useful life of at least 800 hours.  thus, the probability of a success in each trial is $p = 0.90$.  because the trials are independent $X$ has a binomial distribution with parameters $n = 20$ and $p = 0.90$.  the probability mass function of $X$ is,
+
+$$P(X = x) = b(x; 20, 0.90), x = 0, 1, 2, \dots , 20$$
+
+$$= \binom{20}{x}(0.90)^{x}(1 - 0.90)^{20 - x} = \binom{20}{x}(0.90)^{x}(0.10)^{20 - x}, x = 0, 1, 2, \dots, 20$$
 
 a.  exactly 18 will have a useful life of at least 800 hours
 
+$$P(X = 18) = b(18; 20, 0.90) = \binom{20}{18}(0.90)^{18}(0.10)^{20 - 18} = \frac{20!}{18! 2!}(0.90)^{18}(0.10)^{2} = 0.2852$$
+
 b.  at least 15 will have a useful life of at least 800 hours
+
+$$P(X \geq 15) = 1 - P(X \leq 14) = 1 - \sum_{x = 0}^{14}b(x; 20, 0.90) = 1 - 0.0113 = 0.9887$$
 
 c.  at least 2 will not have a useful life of at least 800 hours
 
+because the total number of lights is 20 the event that at least 2 will not have a useful life of at least 800 hours can be looked as at most 18 will have a useful life of at least 800 hours therefore using the table a1 from the appendex we get,
+
+$$P(X \leq 18) = \sum_{x = 0}^{18} b(x; 20, 0.90) = 0.608$$
+
 ###  5.66
 
-changes in airport procedures require considerable planning.  arrival rates of aircraft are important factors that must be taken into account.  suppose small aircraft arrive at a certain airport, according to a poisson process, at the rate of 6 per hour.  thus the poisson parameter for arrivals over a period of hours is $\mu = 6t$ 
+**question** changes in airport procedures require considerable planning.  arrival rates of aircraft are important factors that must be taken into account.  suppose small aircraft arrive at a certain airport, according to a poisson process, at the rate of 6 per hour.  thus the poisson parameter for arrivals over a period of hours is $\mu = 6t$ 
+
+**solution**  let random variables $X$ represent the number of aircraft arrivals during a one hour period.  the poisson parameter for arrivals for a period of $t$ hours is $\mu = 6t$.  the probability mass function of $X$ is 
 
 a.  what is the probability that exavctly 4 small aircraft arrive during a 1-hour period?
 
+$P(X = x) = \frac{e^{-6}(6)^{4}}{4!} = 0.1339$
+
 b.  what is the probability that at least 4 arrive during a 1-hour period?
 
-c.  if we define  aworking day as 12 hours, what is the probability that at least 75 small aircraft arrive during a working day?
+$P(X \geq 4) = 1 - P(X \leq 3) = 1 - P(X \leq 3) = 1 - P(X = 0) - P(X = 1) - P(X = 2) - P(X = 3)$
+
+$=1 - p(0;6) - p(1;6) - p(2;6) - p(3;6)$
+
+$= 1 - \frac{e^{-6}(6)^{0}}{0!} - \frac{{e^{-6}(6)^{1}}}{1!} - \frac{{e^{-6}(6)^{2}}}{2!} - \frac{e^{-6}(6)^{3}}{3!}$
+
+$= 1 - 0.002479 - 0.014873 - 0.044618 - 0.089235$
+
+$= 1 - 0.151204 = 0.8488$
+
+c.  if we define a working day as 12 hours, what is the probability that at least 75 small aircraft arrive during a working day?
+
+$t = 12 \text{ hours} \implies \mu = 6t = 6 \times 12 = 72 \text{ hours}$
+
+$P(X \geq 75) = 1 - P(X \leq 74) = 1 - \sum_{x = 0}^{74} \frac{e^{-72}(72)^{x}}{x!} = 1 - 0.6227 = 0.3773$
 
 ###  5.67
 
