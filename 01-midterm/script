@@ -1,0 +1,2 @@
+pandoc --pdf-engine=xelatex -s -o output.pdf README.md -V geometry:"margin=0.25in"
+
