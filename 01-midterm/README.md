@@ -5,6 +5,7 @@
 2.  [5.27](#527)
 3.  [5.66](#566)
 4.  [5.67](#567)
+1.  [5.3 example](#53-example)
 5.  [6.8](#68)
 6.  [6.32](#632)
 7.  [6.34](#632)
@@ -16,7 +17,6 @@
 
 ###  examples
 
-1.  [5.3 example](#53-example)
 2.  [6.17 example](#617-example)
 3.  [6.20 example](#620-example)
 
@@ -95,7 +95,7 @@ the number of customers arriving per hours follow the poisson distribution with 
 
 $P(X = x) = p(x; \mu), \text{ where } x = 0, 1, 2, 3, \dots$ 
 
-$ = e^{-\mu}\frac{(\mu)^{x}}{x!} = e^{-14}\frac{(14)^{x}}{x!}$
+$= e^{-\mu}\frac{(\mu)^{x}}{x!} = e^{-14}\frac{(14)^{x}}{x!}$
 
 a.  compute the probability that more than 10 customers will arive in a 2-hour period
 
@@ -104,6 +104,23 @@ $P(X > 10) = 1 0 P(X \leq 10) = 1 - \sum_{x = 0}^{10}p(x; 14) = 1 - 0.175681 = 0
 b.  what is the mean number of arrivals during a 2-hour period?
 
 $X$ has a poisson distribution with parameter $\mu = 7 \times 2 = 14$.  the mean of random variable with poisson distribution with parameter $\mu$ is $E(X) = \mu$.  therefore the mean number of arrivals in 2 hours in $E(X) = 14$
+
+###  5.3 example
+
+
+**example 5.3**  a large chain retailer purchases a certain kind of electronic device from a manufacturer.  the manufacturer indicates that defective rate of the device is $3\%$.
+
+a.  the inspector of the retailer randomly picks 20 items from a shipment.  what is the probability that there will be at least one defective item among these 20?
+
+denote by $X$ the number of defective devices among the 20; $b(x; 20, 0.03)$
+
+$$P(X \geq 1) = 1 - P(X = 0) = 1 - b(0; 20, 0.03) = (1 - 0.03^{0})(0.97^{20 - 0}) = 0.4562$$
+
+b.  suppose that the retailer receives 10 shipments in a month and the inspector randomly tests 20 devices per shipment.  what is the probability that there will be 3 shipments containing at least one defective device?
+
+denote by $Y$ the number of shipments containing at least one defective item $b(y; 10, 0.4562)$
+
+$$P(Y = 3) = {{10}\choose{3}} 0.4562^{3}(1 - 0.4562)^{10 - 3} = 0.1602$$
 
 ###  6.8
 
@@ -160,15 +177,54 @@ $$z_{1} = \frac{x_{1} - \mu}{\sigma}$$
 
 a pharmaceutical company knows that approximately $5\%$ of its birth-control pulls have an ingredient that is below the minimum strength, thus rendering the pill ineffective.  what is the probability that fewer than 10 in a sample of 200 pills will be ineffective?
 
+-  the total number of pills is $n = 200$
+-  we consider it a success if a pill is ineffective
+-  the probability of a success in each trial is $p = 5\% = \frac{5}{100} = 0.5$
+-  therefore the probability of failure is $q = 1 - p = 1 - 0.5 = 0.95$
+-  let the random variable $X$ represent the number of ineffective pills in a sample of 200 pills
+-  therefore $X$ has a binomial distribution with parameters $n = 200$ and $p = 0.05$
+-  the mean of binomial distribution is 
+    -  $\mu = np \implies \mu = 200 \cdot 0.05 = 10$
+-  the standard deviation of binomial distribution is
+    -  $\sigma = \sqrt{npq} \implies \sqrt{200 \cdot 0.05 \cdot 0.95} = \sqrt{9.5} = 3.082$
+-  to calculate the prob that fewer than 10 in a sample of 200 pills will be effective, or in otherworse we need to find the area to the left of $x = 9.5$
+    -  $z = \frac{x - \mu}{\sigma} = \frac{9.5 - 10}{3.082} = -0.16$
+    -  $\therefore P(X < 10) = P(Z < -0.16) \implies P(X < 10) = 0.4364$
+
 ###  6.34
 
 a pair of dice is rolled 180 times.  what is the probability that a total of 7 occurs
 
+-  the total number of trails ia $n = 180$
+-  we consider it success if when rolling a pair of dice a total of 7 occur
+-  the number favorable case to get the total of 7 is (1, 6), (2, 5), (3, 4), (4, 3), (5, 2), (6, 1) = 6
+-  the total number of cases wqhen rolling a pair of dice is $6 \cdot 6 = 36$
+-  the prob of a success in each trial is $p \frac{6}{36} = 0.1667$
+-  therefore the probability of failure is $q = 1 - p = 1 - 0.1667 = 0.8333$
+-  let random variable $X$ represent the number of successes among 180 trials
+-  therefore $X$ has a binomial distribution with parameters $n = 180$ and $p = 0.1667$
+-  the mean of binomial distribution is $\mu = np \implies \mu = 180 \cdot 0.1667 = 30$
+-  the standard deviation fo binomial distribution is $\sigma = \sqrt{npq} = \sqrt{180 \cdot 0.1667 \cdot 0.8333} = \sqrt{25} = 5$
+
 a.  at least 25 times?
+
+-  the probability that 7 occur at least 25 times, mean that we need to find the area to the right of $x = 24.5$
+-  $z = \frac{x - \mu}{\sigma} = \frac{24.5 - 30}{5} = -1.1$
+-  $\therefore P(X \geq 25) = P(Z \geq -1.1) = 1 - P(Z < 1.1) = 1 - 0.1357 = 0.8643$
 
 b.  between 33 and 41 times inclusive?
 
+-  we have to now find the area between $x_{1} = 32.5$ and $x_{2} = 41.5$
+-  $z_{1} = \frac{x_{1} - \mu}{\sigma} = \frac{32.5 - 30}{5} = 0.5$
+-  $z_{2} = \frac{x_{2} - \mu}{\sigma} = \frac{41.5 - 30}{5} = 2.3$
+-  $\therefore P(33 \leq X \leq 41) = P(0.05 < Z < 2.30) = P(Z < 2.30) - P(Z < 0.50) = 0.9893 - 0.6915 = 0.2978$
+
 c.  exactly 30 times?
+
+-  we have to find the area under the curve that is between $x_{1} = 29.5$ and $x_{2} = 30.5$
+-  $z_{1} = \frac{x_{1} - \mu}{\sigma} = \frac{29.5 - 30}{5} = -0,1$
+-  $z_{2} = \frac{x_{2} - \mu}{\sigma} = \frac{30.5 - 30}{5} = 0.1$
+-  $\therefore P(X = 30) = P(-0.10 \leq Z \leq 0.10) = P(Z \leq 0.10) - P(Z \leq -0.10) = 0.5398 - 0.4602 = 0.0796$
 
 ###  6.55
 
@@ -176,7 +232,15 @@ computer response time is an important application of the gamma and exponential 
 
 a.  what is the probability that response time exceeds 5 seconds?
 
+-  let the random variable $X$ represent the response time, in seconds
+-  $X$ has an exponential distribution with a mean of $\beta = 3 \text{ seconds }$
+-  the probability density function of exponential distribution is,
+-  $f(x; \beta) = \frac{1}{3} e^{-x/\beta} \implies f(x; 3) = \frac{1}{3} e^{-x/3} ; x \geq 0$ 
+-  $P(X > 5) = 1 - P(X \leq 5) = 1 - \frac{1}{3} \int_{0}^{5} e^{-x/3} dx = 1 - (1 - e^{-5/3}) = e^{-5/3} = 0.1889$
+
 b.  what is the probability that response time exceeds 10 seconds?
+
+-  $P(X > 10) = 1 - P(X \leq 10) = 1 - \frac{1}{3} \int_{0}^{10} e^{-x/3} dx = 1 - (1 - e^{10/3}) = e^{-10/3} = 0.0357$
 
 ###  6.66
 
@@ -184,8 +248,14 @@ a certain type of device has an advertised failure rate of 0.01 per hour.  the f
 
 a.  what is the mean time of failure?
 
+-  an advertised failure rate of $\lambda = 0.01$%
+-  let random variable $X$ represent the fialure rate of a certain type of device
+-  therefore $X$ follows the exponential distribution with parameter $\lambda = 0.01$
+-  the mean time to failure is thus, $\mu = \frac{1}{\lambda} = \frac{1}{0.01} = 100$
+
 b.  what is the probability that 200 hours will pass before a failure is observed?
 
+-  $P(X \leq 200) = 100 - P(X \leq 200) = 1 - (1 - e^{-0.01 \times 200}) = e^{-0.01 \times 200} = 0.1353$
 
 ###  8.27
 
@@ -203,23 +273,6 @@ b.  an amount between $5$ and $10$ points?
 
 
 <br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-
-###  5.3 example
-
-
-**example 5.3**  a large chain retailer purchases a certain kind of electronic device from a manufacturer.  the manufacturer indicates that defective rate of the device is $3\%$.
-
-a.  the inspector of the retailer randomly picks 20 items from a shipment.  what is the probability that there will be at least one defective item among these 20?
-
-denote by $X$ the number of defective devices among the 20; $b(x; 20, 0.03)$
-
-$$P(X \geq 1) = 1 - P(X = 0) = 1 - b(0; 20, 0.03) = (1 - 0.03^{0})(0.97^{20 - 0}) = 0.4562$$
-
-b.  suppose that the retailer receives 10 shipments in a month and the inspector randomly tests 20 devices per shipment.  what is the probability that there will be 3 shipments containing at least one defective device?
-
-denote by $Y$ the number of shipments containing at least one defective item $b(y; 10, 0.4562)$
-
-$$P(Y = 3) = {{10}\choose{3}} 0.4562^{3}(1 - 0.4562)^{10 - 3} = 0.1602$$
 
 ###  6.17 example
 
