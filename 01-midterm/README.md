@@ -91,9 +91,19 @@ $P(X \geq 75) = 1 - P(X \leq 74) = 1 - \sum_{x = 0}^{74} \frac{e^{-72}(72)^{x}}{
 
 the number of customers arriving per hour at a certain automobile service facility is assumed to follow a poisson distribution with mean $\lambda = 7$
 
+the number of customers arriving per hours follow the poisson distribution with mean $\lambda = 7$, therefore arrival rate of customers is 7 per hour.  let random variable $X$ represent the number of arrivals of customers in 2 hour, therefore $t = 2$.  $X$ has a poisson distribution with parameter $\mu = 7 \times 2 = 14$.  therefore the probability mass function of $X$ is,
+
+$P(X = x) = p(x; \mu), \text{ where } x = 0, 1, 2, 3, \dots$ 
+
+$ = e^{-\mu}\frac{(\mu)^{x}}{x!} = e^{-14}\frac{(14)^{x}}{x!}$
+
 a.  compute the probability that more than 10 customers will arive in a 2-hour period
 
+$P(X > 10) = 1 0 P(X \leq 10) = 1 - \sum_{x = 0}^{10}p(x; 14) = 1 - 0.175681 = 0.8243$
+
 b.  what is the mean number of arrivals during a 2-hour period?
+
+$X$ has a poisson distribution with parameter $\mu = 7 \times 2 = 14$.  the mean of random variable with poisson distribution with parameter $\mu$ is $E(X) = \mu$.  therefore the mean number of arrivals in 2 hours in $E(X) = 14$
 
 ###  6.8
 
@@ -101,13 +111,50 @@ given a normal distribution with $\mu = 30$ and $\sigma = 6$, find
 
 a.  the normal curve area to the right of $x = 17$
 
+$$z = \frac{x - \mu}{\sigma} = \frac{17 - 30}{6.0} \approx -2.17$$
+
+$\therefore P(X > 17) = P(Z > -2.17) = 1 - P(Z \leq -2.17) = 1 - 0.0150 = 0.9850$
+
 b.  the normal curve area to the left of $x = 22$
+
+$$z = \frac{x - \mu}{\sigma} = \frac{22 - 30}{6.0} \approx -1.33$$
+
+$$\therefore P(X < 22) = P(Z < -1.33) = 0.0918$$
 
 c.  the normal curve area between $x = 32$ and $x = 41$
 
+$$z_{1} = \frac{x_{1} - \mu}{\sigma} = \frac{32 - 30}{6.0} \approx 0.33$$
+
+$$z_{2} = \frac{x_{2} - \mu}{\sigma} = \frac{41 - 30}{6.0} \approx 1.83$$
+
+$$\implies P(32 < X < 41) = P(X < 41) - P(X < 32)$$
+
+$$= P(Z_{2} < 1.83) - P(Z_{1} < 0.33) = 0.9664 - 0.6293 = 0.3371$$ 
+
 d.  the value of $x$ that has $80\%$ of the normal curve area to the left
 
+$$z = \frac{x - \mu}{\sigma}$$
+
+$$x = {\sigma}z + \mu = 6 \cdot 0.842 + 30 = 35.05$$
+
 e.  the tow values of $x$ rthat conatin the middle $75\%$ of the normal curve area
+
+$P(-z \leq Z \leq z) = 0.75$
+
+$P(Z \leq z) - P(Z \leq -z) = 0.75$
+
+$P(Z \leq z) - (1 - P(Z \leq z)) = 0.75$
+
+$2 P(Z \leq z) - 1 = 0.75$
+
+$2 P(Z \leq z) = 0.75$
+
+$P(Z \leq z) = 0.875$
+
+therefore the value of $z$ that leaves an area of 0.875 to the right is $z_{1} = -1.15$ and the left is $z_{2} = 1.15$
+
+$$z_{1} = \frac{x_{1} - \mu}{\sigma}$$
+
 
 ###  6.32
 
