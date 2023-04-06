@@ -257,23 +257,6 @@ b.  what is the probability that 200 hours will pass before a failure is observe
 
 -  $P(X \leq 200) = 100 - P(X \leq 200) = 1 - (1 - e^{-0.01 \times 200}) = e^{-0.01 \times 200} = 0.1353$
 
-###  8.27
-
-in a chemical process, the amount of a certain type of impurity in the output is difficult to control and is thus a random variable.  speculation is that the population mean amount of the impurity is $0.20$ gram per gram of output.  it is known that the standard deviation is $0.1$ gram per gram.  an experiment is conducted to gain more insight regarding the speculation that $\mu = 0.2$.  the process is run on a lab scale $50$ times and the sample average $\bar{x}$ turns out to be $0.23$ gram per gram.  comment on the speculation that the mean amount of impurity is $0.20$ gram per gram.  make use of the central limit theorem in your work.
-
-###  8.30
-
-the mean score for freshman on an aptitude test at a certain college is $540$ with a standard deviation of $50$.  assume the means to be measured to any degree of accuracy.  what is the probability that two groups selected at random, consisting of $32$ and $50$ students, respectively will differ in their mean scores by
-
-a.  more than 20 points
-
-b.  an amount between $5$ and $10$ points?
-
-
-
-
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-
 ###  6.17 example
 
 **question**
@@ -311,3 +294,61 @@ P(X \geq  20) = 1 - \int_{0}^{5} \frac{ye^{-y}}{\Gamma(2)}dy = 1 - F(5; 2) = 1 -
 $$
 
 where $F(5; 2) = 0.96$ is found from table a.23.  as a result we could conclude that the conditions of the gamma distribution with $\alpha = 2$ and $\beta = 4$ are not supported by the data that an observed time to complaint is as large as $20$ months.  thus, it is reasonable to conclude that the quality control work was effective.
+
+###  8.27
+
+in a chemical process, the amount of a certain type of impurity in the output is difficult to control and is thus a random variable.  speculation is that the population mean amount of the impurity is $0.20$ gram per gram of output.  it is known that the standard deviation is $0.1$ gram per gram.  an experiment is conducted to gain more insight regarding the speculation that $\mu = 0.2$.  the process is run on a lab scale $50$ times and the sample average $\bar{x}$ turns out to be $0.23$ gram per gram.  comment on the speculation that the mean amount of impurity is $0.20$ gram per gram.  make use of the central limit theorem in your work.
+
+-  let $X$ be a random variable which represents the amount of the observed type of impurity in the output, in gram per gram of output
+-  we klnow that $\sigma_{X} = 0.20$
+-  based on the results of the experiment we want to comment whether the population mean of the amount of impurity truly is $\mu_{X} = 0.20$
+-  since the sample average turned out to be $\bar{x} = 0.23$, let us determine the probability that the sample mean is greater than or equal to 0.23, while under assumption that the observed population mean is 0.20
+-  the length of the sample is $n = 50$, so we are able to find the sample mean and standard deviation
+    -  $\mu{\bar{X}} = \mu_{X} = 0.20$
+    -  $\sigma_{\hat{X}} = \frac{\sigma_{X}}{\sqrt{n}} = \frac{0.10}{\sqrt{50}} = 0.01414$
+-  we know that the random variable
+$$Z = \frac{\hat{X} - \mu_{X}}{\sigma_{X}/\sqrt{n}} = \frac{\hat{X} - \mu_{\hat{X}}}{\sigma_{\hat{X}}}$$
+-  we obtain the values $P(Z < 2.122)$ from the normal distribution values table 
+$$P(0.23 \leq \hat{X} = P\left(\frac{0.23 - \mu_{\hat{X}}}{\sigma_{\hat{X}}} \leq \frac{\hat{X} - \mu_{\hat{X}}}{\sigma_{\hat{X}}}\right) = P\left(\frac{0.23 - 0.20}{0.01414 \leq Z}\right) = P(2.122 \leq Z) = 1 - P(Z < 2.122) = 1 - 0.9831 = 0.0169$$
+
+-  so if the population mean is $\mu_{X} = 0.20$ there is only a $1.69\%$ chance that the sample mean of a sample of legth $50$ will be $0.23$ or larger
+-  an usual way of concluding that the assumption is wrong is when the observed probability is less than $5\%$ so by that criteria we would say that the mean amount of impurity is not 0.20
+
+###  8.30
+
+the mean score for freshman on an aptitude test at a certain college is $540$ with a standard deviation of $50$.  assume the means to be measured to any degree of accuracy.  what is the probability that two groups selected at random, consisting of $32$ and $50$ students, respectively will differ in their mean scores by
+
+-  let $X$ be the random variable with mean $\mu_{X} = 540$ and standard deviation of $\sigma_{X} = 50$ which describes the first group of $n_{X} = 32$ students from the observed population
+-  let $Y$ be the random variable also with mean $\mu_{Y} = 540$ and standard deviation $\sigma_{Y} = 50$ which describes the second group of $n_{Y} = 50$ students from the observed population
+-  the sampling distribution of $\hat{X} - \hat{Y}$ will be approximately normal and will have tthe following mean and standard deviation
+
+$$\mu_{\hat{X} - \hat{Y}} = \mu_{X} - \mu_{Y} = 540 - 540 = 0$$
+
+$$\sigma_{\hat{X} - \hat{Y}} = \sqrt{\frac{\sigma_{X}^{2}}{n_{X}} + \frac{\sigma_{Y}^{2}}{n_{Y}}} = \sqrt{\frac{2500}{32} + \frac{2500}{50}} = 11.319$$
+
+we know that the random variable, has a normal distribution with the mean 0 and the standard deviation 1
+
+$$Z = \frac{\hat{X} - \hat{Y} - \mu_{\hat{X} - \hat{Y}}}{\sigma_{\hat{X} - \hat{Y}}}$$
+
+a.  more than 20 points
+
+$$P(20 < |{\hat{X} - \hat{Y}}|) = P(\hat{X} - \hat{Y} < -20) + P(20 < \hat{X} - \hat{Y})$$
+
+$$P\left(\frac{\hat{X} - \hat{Y} - \mu_{\hat{X} - \hat{Y}}}{\sigma_{\hat{X} - \hat{Y}}} < \frac{-20 - \mu_{\hat{X} - \hat{Y}}}{\sigma_{\hat{X} - \hat{Y}}} \right) + P\left( \frac{20 - \mu_{\hat{X} - \hat{Y}}}{\sigma_{\hat{X} - \hat{Y}}} < \frac{\hat{X} - \hat{Y} - \mu_{\hat{X} - \hat{Y}}}{\sigma_{\hat{X} - \hat{Y}}}\right)$$
+
+$$= P\left( Z < \frac{-20 - 0}{11.319} \right) + P\left( \frac{20 - 0}{11.319} < Z \right) = P(Z < -1.767) + P(1.767 < Z)$$
+
+we obtained the values from the nromal distribution values table 
+
+$$= P(Z < -1.767) + 1 - P(Z < 1.767 = 0.0386 + 1 - 0.9614 = 0.0772$$
+
+b.  an amount between $5$ and $10$ points?
+
+$$P(5 < |\hat{X} - \hat{Y}| < 10) = 2 \cdot P(5 < \hat{X} - \hat{Y} < 10) = 2P\left( \frac{5 - \mu_{\hat{X} - \hat{Y}}}{\sigma_{\hat{X} - \hat{Y}}} < \frac{\hat{X} - \hat{Y} - \mu_{\hat{X} - \hat{Y}}}{\sigma_{\hat{X} - \hat{Y}}} < \frac{10 - \mu_{\hat{X} - \hat{Y}}}{\sigma_{\hat{X} - \hat{Y}}} \right)$$
+
+$$= 2P \left( \frac{5 - 0}{11.319} < Z < \frac{10 - 0}{11.319}\right) = 2P(0.4417 < Z < 0.8835 = 2(P(Z < 0.8835) - P(Z \leq 0.4417))$$
+
+$$= 2(0.8115 - 0.6706) = 2 \cdot 0.1409 = 0.2818$$
+
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
