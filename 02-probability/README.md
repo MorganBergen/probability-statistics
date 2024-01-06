@@ -9,8 +9,7 @@
 5.  [conditional probability](#conditional-probability)
 6.  [multiplicative rules](#multiplicative-rules)
 7.  [bayes' rule](#bayes-rule)
-
-###  [exercises](#-chapter-2-probability)
+8.  [exercises](#chapter-2-probability)
 
 ## sample space
 
